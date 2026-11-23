@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "bathroom-remodeling-website",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "headers": [
     {
       "source": "/images/(.*)",
