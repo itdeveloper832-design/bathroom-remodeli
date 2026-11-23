@@ -25,6 +25,13 @@ const nextConfig = {
         destination: '/bathroom-remodeling-tempe-az/',
         permanent: true,
       },
+      // Ported from the old cPanel .htaccess — the only redirect there
+      // not already in lib/seo-redirects.generated.json.
+      {
+        source: '/blog/why-we-use-schluter-kerdi-waterproofing-chandler/',
+        destination: '/blog/schluter-kerdi-vs-redgard-arizona/',
+        permanent: true,
+      },
     ];
     let seo = [];
     try {
