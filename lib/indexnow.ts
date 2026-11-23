@@ -25,18 +25,9 @@ export async function submitToIndexNow(urls: string | string[], retry = true): P
     return true;
   }
 
-  // If we are in a browser environment, call the PHP script as a fallback 
-  // since Node.js API routes might not be available in a static export.
-  if (typeof window !== "undefined") {
-    try {
-      for (const url of uniqueUrls) {
-        await fetch(`/submit-indexnow.php?url=${encodeURIComponent(url)}`);
-      }
-      return true;
-    } catch (e) {
-      console.error("[IndexNow] Browser-side submission failed, falling back to direct API call.", e);
-    }
-  }
+  // NOTE: the old cPanel PHP fallback (/submit-indexnow.php) is gone —
+  // on Vercel there is no PHP, so submissions always go direct to the
+  // IndexNow API below (works from server actions and the browser).
 
   const data = {
     host: HOST,
