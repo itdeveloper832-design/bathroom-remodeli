@@ -1,0 +1,366 @@
+@import 'tailwindcss';
+@source "../app/**/*.{ts,tsx,js,jsx}";
+@source "../components/**/*.{ts,tsx,js,jsx}";
+
+@custom-variant dark (&:is(.dark *));
+
+/* CRITICAL RENDERING PATH OPTIMIZATIONS */
+
+/* Use system fonts - no network requests needed */
+@font-face {
+  font-family: 'system-ui';
+  font-display: swap;
+  src: local('system-ui');
+}
+
+/* Geist Mono not loaded from network - use system monospace to avoid a font request */
+@font-face {
+  font-family: 'Geist Mono';
+  font-display: swap;
+  src: local('Courier New'), local('Courier'), monospace;
+}
+
+/* Optimize rendering performance */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px; /* InfoHeader (40px) + Header (72px) */
+  font-feature-settings: "kern" 1;
+  /* Subpixel antialiasing improves text clarity at small sizes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Prevent CLS (Cumulative Layout Shift) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reserve space for images to prevent CLS */
+img[data-aspect-ratio] {
+  aspect-ratio: var(--aspect-ratio);
+}
+
+.aspect-video { aspect-ratio: 16 / 9; }
+.aspect-square { aspect-ratio: 1 / 1; }
+.aspect-portrait { aspect-ratio: 3 / 4; }
+.aspect-remodel { aspect-ratio: 3 / 2; } /* Standard architectural photo ratio */
+
+/* Prevent layout shift for common containers */
+.skeleton-box {
+  background-color: var(--muted);
+  border-radius: var(--radius);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+
+/* Prevent layout shift from scrollbars */
+html {
+  scrollbar-gutter: stable;
+}
+
+:root {
+  --font-sans: var(--font-inter), 'Inter', system-ui, sans-serif;
+  /* Luxury Remodeling Color Palette */
+  --background: #FFFFFF; /* Pure White */
+  --foreground: #222222; /* Dark Charcoal */
+  --card: #FFFFFF;
+  --card-foreground: #222222;
+  --popover: #FFFFFF;
+  --popover-foreground: #222222;
+  --primary: #1A2E4A; /* Deep Navy */
+  --primary-foreground: #FFFFFF;
+  --secondary: oklch(0.94 0.01 85); /* Light beige */
+  --secondary-foreground: #222222;
+  --muted: oklch(0.92 0.01 85);
+  --muted-foreground: oklch(0.30 0.01 250); /* Darkened for better contrast */
+  --accent: #C9972B; /* Warm Gold */
+  --accent-foreground: #FFFFFF;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: #FFFFFF;
+  --border: oklch(0.88 0.015 85);
+  --input: oklch(0.92 0.01 85);
+  --ring: #C9972B;
+  --chart-1: oklch(0.55 0.08 85);
+  --chart-2: oklch(0.55 0.13 184);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.97 0.005 85);
+  --sidebar-foreground: oklch(0.25 0.01 250);
+  --sidebar-primary: oklch(0.55 0.08 85);
+  --sidebar-primary-foreground: oklch(0.99 0.003 85);
+  --sidebar-accent: oklch(0.94 0.01 85);
+  --sidebar-accent-foreground: oklch(0.25 0.01 250);
+  --sidebar-border: oklch(0.88 0.015 85);
+  --sidebar-ring: oklch(0.55 0.08 85);
+}
+
+
+
+@theme inline {
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-serif: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans), sans-serif;
+  }
+  h1, h2 {
+    font-weight: 800 !important;
+  }
+  h3 {
+    font-weight: 700 !important;
+  }
+  p {
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+  }
+  button, .cta, .btn, [role="button"] {
+    font-weight: 600 !important;
+  }
+}
+
+/* CUSTOM ANIMATIONS FOR PERFORMANCE (REPLACING FRAMER MOTION) */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoom-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-in {
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-fill-mode: both;
+}
+
+.fade-in {
+  animation-name: fade-in;
+}
+
+.slide-in-from-bottom-4 {
+  animation-name: slide-up;
+}
+
+.zoom-in-95 {
+  animation-name: zoom-in;
+}
+
+@keyframes slide-right {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-from-left-4 {
+  animation-name: slide-right;
+}
+
+.duration-300 { animation-duration: 300ms; }
+.duration-500 { animation-duration: 500ms; }
+.duration-700 { animation-duration: 700ms; }
+.duration-1000 { animation-duration: 1000ms; }
+
+.delay-50 { animation-delay: 50ms; }
+.delay-100 { animation-delay: 100ms; }
+.delay-150 { animation-delay: 150ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-250 { animation-delay: 250ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-1000 { animation-delay: 1000ms; }
+
+/* ===== ACCESSIBILITY ENHANCEMENTS ===== */
+
+/* Focus visible styles for all interactive elements */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Ensure links are distinguishable (not only by color) */
+a:not([class*="btn"]):not([class*="Button"]):not(.no-underline) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Links inside prose/content areas must have underlines */
+.prose a,
+section p a,
+footer a:not([aria-label]) {
+  text-underline-offset: 3px;
+}
+
+/* Minimum touch target size (48x48px) for mobile */
+@media (pointer: coarse) {
+  a, button, [role="button"], input, select, textarea, summary {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skip link styling */
+.sr-only:focus-visible {
+  position: fixed !important;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  clip: auto !important;
+  width: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+}
+
+/* Content visibility optimization for below-fold sections */
+/* Skips rendering off-screen sections entirely until they enter the viewport */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* GPU layer promotion for elements that animate frequently */
+/* Avoids layout thrashing and enables hardware acceleration */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Contain layout for major page sections to prevent cascading reflows */
+section {
+  contain: layout style;
+}
+
+/* Avoid painting animations on low-power devices */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-in {
+    animation-play-state: running;
+  }
+}
+
+/* ===== CSS-ONLY GALLERY BEFORE/AFTER HOVER =====
+   No JavaScript needed - pure CSS handles the image swap on hover.
+   This converts gallery-preview.tsx from a client to a server component. */
+
+/* After image: hidden by default, revealed on hover */
+.gallery-card .gallery-after {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Before image: visible by default, hidden on hover */
+.gallery-card .gallery-before {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* On hover: swap before→after */
+.gallery-card:hover .gallery-after { opacity: 1; }
+.gallery-card:hover .gallery-before { opacity: 0; }
+
+/* Before label: shown by default */
+.gallery-label-before { display: inline-block; }
+.gallery-label-after  { display: none; }
+
+/* On hover: swap labels */
+.gallery-card:hover .gallery-label-before { display: none; }
+.gallery-card:hover .gallery-label-after  { display: inline-block; }
+
+/* Touch devices: tap to reveal after image */
+@media (hover: none) {
+  .gallery-card:focus-within .gallery-after { opacity: 1; }
+  .gallery-card:focus-within .gallery-before { opacity: 0; }
+}
+
+/* Ensure all solid buttons and links acting as primary CTAs use Warm Gold (#C9972B) with white text */
+a.bg-primary:not([class*="bg-primary/5"]):not([class*="bg-primary/10"]):not([class*="bg-primary/20"]),
+button.bg-primary:not([class*="bg-primary/5"]):not([class*="bg-primary/10"]):not([class*="bg-primary/20"]),
+a.bg-foreground:not([class*="bg-foreground/5"]):not([class*="bg-foreground/10"]):not([class*="bg-foreground/20"]),
+button.bg-foreground:not([class*="bg-foreground/5"]):not([class*="bg-foreground/10"]):not([class*="bg-foreground/20"]),
+.btn-primary,
+.cta-button {
+  background-color: #C9972B !important;
+  color: #FFFFFF !important;
+  border-color: #C9972B !important;
+}
+
+a.bg-primary:hover,
+button.bg-primary:hover,
+a.bg-foreground:hover,
+button.bg-foreground:hover,
+.btn-primary:hover,
+.cta-button:hover {
+  background-color: #b08120 !important;
+  color: #FFFFFF !important;
+  border-color: #b08120 !important;
+}
+

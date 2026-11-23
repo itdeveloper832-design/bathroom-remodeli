@@ -1,0 +1,60 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build (static export)
+        run: pnpm run build
+        env:
+          NEXT_OUTPUT: export
+
+      # Deploy via FTP
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.digitalskillshouse.pk
+          username: arzhome@arzhomeremodeling.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftp
+          local-dir: ./out/
+          server-dir: ./
+          state-name: .ftp-deploy-sync-state-v7.json
+          dangerous-clean-slate: false
+          timeout: 900000
+          log-level: verbose
+          security: loose
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.env*
+            cgi-bin/**
+            **/__next*
+# Trigger redeployment to test cPanel FTP connection timeout status - run 2

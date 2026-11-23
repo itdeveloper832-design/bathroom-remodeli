@@ -1,0 +1,1262 @@
+/**
+ * Unique content data for each service page
+ * Ensures NO duplicate content across pages
+ * Each service has custom benefits, issues, tips, and FAQs
+ */
+
+export interface ServiceContentData {
+  benefits: Array<{
+    title: string;
+    description: string;
+    icon?: string;
+  }>;
+  issues: Array<{
+    problem: string;
+    solution: string;
+  }>;
+  tips: string[];
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+}
+
+export const serviceContent: Record<string, ServiceContentData> = {
+  "bathroom-remodeling": {
+    benefits: [
+      {
+        title: "Luxury Master Suite Conversions",
+        description: "Expand your master bathroom footprint in Chandler homes to accommodate freestanding soaking tubs, custom walk-in tile showers, and dedicated linen storage.",
+        icon: "Sparkles",
+      },
+      {
+        title: "Custom Double Vanity Upgrades",
+        description: "Install premium double vanities with quartz countertops, undermount sinks, and built-in electrical outlets for clean styling in your East Valley home.",
+        icon: "Zap",
+      },
+      {
+        title: "Zero-Threshold Curbless Showers",
+        description: "Redesign your bathing area with safe, zero-step entries, custom linear drains, and frameless glass enclosures designed for AZ lifestyles.",
+        icon: "TrendingUp",
+      },
+      {
+        title: "Space-Optimized Small & Guest Baths",
+        description: "Configure secondary bathrooms and powder rooms with floating vanities and pocket doors to maximize utility without overcrowding.",
+        icon: "Palette",
+      },
+    ],
+    issues: [
+      {
+        problem: "Outdated layouts that waste space and create poor traffic flow",
+        solution: "Strategic floor plan re-engineering with floating vanities, space-saving shower layouts, and optimized traffic flow.",
+      },
+      {
+        problem: "Poor storage options leading to bathroom clutter",
+        solution: "Installation of custom cabinetry, linen towers, built-in wall niches, and floating shelving solutions.",
+      },
+      {
+        problem: "Hard water damage from Chandler's mineral-heavy supply",
+        solution: "Use of non-porous large-format porcelain tile, stain-resistant epoxy grout, and hydrophobic nano-coated glass to resist scale and staining.",
+      },
+    ],
+    tips: [
+      "Incorporate Recessed Storage Niches: Plan built-in tile wall niches inside your walk-in shower early to avoid cluttering bench spaces.",
+      "Reroute Plumbing for Double Sinks: Upgrading from a single to a double vanity requires strategic drain and supply rerouting within local plumbing code.",
+      "Prioritize Schluter-KERDI Waterproofing: Ensure your luxury tile surround is backed by a continuous waterproofing membrane to prevent subfloor dry rot.",
+      "Select Arizona-Resilient Finishes: Use non-porous quartz countertops and stain-resistant epoxy grout to resist Chandler's hard water mineral scale.",
+    ],
+    faqs: [
+      {
+        question: "How long does a full bathroom remodel take in Chandler?",
+        answer:
+          "A complete master bath remodel or custom walk-in shower conversion typically takes 4 to 6 weeks. We provide a detailed design-build timeline and a locked-in fixed-price contract for your Chandler home, handling everything from demo to custom cabinetry. Contact our team and our team at (520) 569-3339 to get started.",
+      },
+      {
+        question: "What's included in your bathroom remodeling services in Chandler?",
+        answer:
+          "From custom double vanity installations to complete walk-in shower tile setting, we handle all plumbing, structural framing, and Schluter-KERDI waterproofing under our single  license (). We manage all City of Chandler building permits and inspections for complete compliance.",
+      },
+      {
+        question: "Do you handle permits and inspections for bathroom remodeling?",
+        answer:
+          "Yes! We obtain all necessary permits and coordinate inspections. Whether you are expanding a master bath or remodeling a secondary guest bathroom, we coordinate all structural and plumbing reviews with the Chandler Development Services department.",
+      },
+      {
+        question: "What is the typical bathroom remodel chandler az cost?",
+        answer:
+          "Bathroom remodeling costs vary based on design layout, footprint expansions, and material selections. Standard guest bathroom refreshes represent a standard scope, while custom master suite transformations with tiled walk-in showers represent a customized scope. We offer free on-site consultations to prepare detailed, line-item written estimates. Call us at (520) 569-3339 to schedule.",
+      },
+      {
+        question: "Why should Chandler homeowners choose your design-build services?",
+        answer:
+          "We specialize exclusively in durable bathroom renovations under . We do not use sub-contracted crews; our in-house tile specialists secure every wet area with Schluter-KERDI waterproofing systems, set large-format tile with epoxy grout to resist local hard water, and install custom double vanities under fixed-price contracts.",
+      },
+    ],
+  },
+
+  "shower-remodeling": {
+    benefits: [
+      {
+        title: "Spa-Like Shower Experience",
+        description: "Transform your daily routine with rainfall showerheads, body jets, and luxurious fixtures designed for Chandler homes.",
+        icon: "Droplets",
+      },
+      {
+        title: "Vapor-Tight Waterproofing",
+        description: "Schluter-KERDI membrane systems prevent leaks, mold, and framing wood rot for decades under a Workmanship Warranty.",
+        icon: "Shield",
+      },
+      {
+        title: "Improved Drainage & Flow",
+        description: "Modern linear drain systems with proper slope configurations ensure water flows efficiently without pooling.",
+        icon: "Wind",
+      },
+      {
+        title: "Hydrophobic Glass Enclosures",
+        description: "Tempered frameless glass with nano-coatings that repel hard water minerals and prevent calcium spots.",
+        icon: "Sparkles",
+      },
+    ],
+    issues: [
+      {
+        problem: "Leaking surrounds causing water damage to subfloors and walls",
+        solution: "Complete waterproofing system with sealed membranes, proper slope, and modern grout systems.",
+      },
+      {
+        problem: "Cracked tiles and failing caulk from hard water and foundation settling",
+        solution: "High-quality dense porcelain tile with flexible latex thinset and stain-resistant epoxy grout.",
+      },
+      {
+        problem: "Mold and mildew growth in porous cement grout",
+        solution: "Upgrading to non-porous epoxy grout that prevents mold spores from taking root.",
+      },
+      {
+        problem: "Sudden temperature drops or plumbing pressure swings",
+        solution: "Upgrading to new pressure-balancing mixing valves that maintain steady temperatures and prevent scalding.",
+      },
+    ],
+    tips: [
+      "Waterproofing is Critical: Invest in full waterproofing systems with membrane underlayment, not just tile and grout.",
+      "Choose Textured Tile for Safety: Anti-slip tile reduces accidents and provides better grip in wet shower environments.",
+      "Plan for Niche Storage: Built-in shower niches eliminate clutter and provide functional storage without taking space.",
+      "Select Low-Maintenance Fixtures: Brushed nickel and brass finishes naturally hide hard water spots better than chrome.",
+    ],
+    faqs: [
+      {
+        question: "What's the difference between walk-in and enclosure showers?",
+        answer:
+          "Walk-in showers have an open design with no door, while enclosure showers use glass to contain water. If you're looking for accessible shower remodeling in Chandler, a walk-in design is often the best choice for safety and style. Call Us at (520) 569-3339 for a free design consultation.",
+      },
+      {
+        question: "How long does a shower remodel near me typically take?",
+        answer:
+          "A standard shower renovation near me usually takes 2-3 weeks. As a top shower remodeling company in Chandler operating under , we ensure the project stays on schedule while maintaining high quality standards and providing a fixed-price guarantee.",
+      },
+      {
+        question: "What's the best tile shower installation in Chandler?",
+        answer:
+          "Porcelain tile is ideal for a tile shower installation in Chandler—it's non-porous and resists mold. We set tiles using flexible latex thinset and solid epoxy grout that repels East Valley's 18+ grains of hard water mineral scale.",
+      },
+      {
+        question: "Do you pull permits for shower remodeling in Chandler?",
+        answer:
+          "Yes! We handle all plumbing, structural, and electrical permit filings with the City of Chandler Development Services Department and coordinate inspections to ensure your shower meets local building codes.",
+      },
+      {
+        question: "How do you prevent leaks in custom tiled showers?",
+        answer:
+          "We use a complete Schluter-KERDI waterproofing membrane system behind every tile surround. This creates a continuous, vapor-tight barrier that protects your framing wood from moisture, backed by our Workmanship Warranty.",
+      },
+    ],
+  },
+
+  "small-bathroom-remodeling": {
+    benefits: [
+      {
+        title: "Maximum Space Efficiency",
+        description: "Custom designs with floating vanities and space-saving layouts that maximize functional storage in tight layouts.",
+        icon: "Box",
+      },
+      {
+        title: "Brighter Visuals",
+        description: "Strategic LED vanity lighting, large-format tile, and large mirror placement create the illusion of extra space.",
+        icon: "Lightbulb",
+      },
+      {
+        title: "Affordable Transformation",
+        description: "Smaller square footage means lower material costs while delivering significant compact bathroom renovation upgrades.",
+        icon: "DollarSign",
+      },
+      {
+        title: "Improved Traffic Flow",
+        description: "An optimized floor plan ensures better physical movement and comfortable use in compact spaces.",
+        icon: "Wind",
+      },
+    ],
+    issues: [
+      {
+        problem: "Cramped and claustrophobic compact bathrooms",
+        solution: "We install wall-mounted floating vanities and custom quartz vanity tops to open up empty floor space.",
+      },
+      {
+        problem: "Zero linen or toiletries storage space",
+        solution: "We cut into the wall studs to build custom recessed storage cabinets and tiled shower niches.",
+      },
+      {
+        problem: "Dark, gloomy environment with dim bulbs",
+        solution: "We design high-output recessed LED vanity lighting systems and vapor-proof shower lighting.",
+      },
+      {
+        problem: "Trapped steam causing blistering drywall paint",
+        solution: "We size and install high CFM quiet exhaust fans with moisture-resistant materials that quickly vent humidity.",
+      },
+    ],
+    tips: [
+      "Build Recessed Storage Niches: We cut into wall stud cavities to build a custom tiled shower niche that stores toiletries without blocking shoulders.",
+      "Install Floating Vanities: Exposing more waterproof flooring creates the visual illusion of an optimized floor plan.",
+      "Select Large-Format Tiles: Laying large-format tile with fewer grout lines makes compact bathrooms feel wider.",
+      "Replace Shower Curtains with Glass: Seamless glass panels allow light to flow uninterrupted across your walk-in shower.",
+    ],
+    faqs: [
+      {
+        question: "What is the average small bathroom remodel cost in Chandler?",
+        answer:
+          "The average small bathroom remodel cost in Chandler is customized to your project scope, covering options from a cosmetic upgrade (new floating vanity, quartz vanity top, waterproof flooring) to a complete compact bathroom renovation. We provide a written, fixed-price quote after our in-home consultation. Call Us at (520) 569-3339.",
+      },
+      {
+        question: "What is the minimum size bathroom you can remodel?",
+        answer:
+          "We successfully renovate guest bathrooms and powder rooms as small as five by five feet. Even tiny half baths can be transformed into highly functional spaces using corner vanities, wall mounted toilets, and narrow profile sinks designed specifically for tight floor clearances.",
+      },
+      {
+        question: "How do you make a compact bathroom look and feel larger?",
+        answer:
+          "To make a compact bathroom feel spacious, we utilize light color palettes, install large mirrors to reflect natural light, hang floating vanities to expose more flooring, use large-format tile to reduce grout lines, and replace heavy shower curtains with seamless glass panels.",
+      },
+      {
+        question: "What ventilation options work best in compact bathrooms?",
+        answer:
+          "We size and install high CFM quiet exhaust fans that quickly vent moisture out of the space, using moisture-resistant materials and sealing all ceiling joints to prevent hot desert attic air leaks.",
+      },
+      {
+        question: "Can you add a custom walk-in shower to a half bath?",
+        answer:
+          "Yes, we frequently convert small half baths into full bathrooms by reconfiguring adjacent closet spaces to add a modern curbless walk-in shower. This smart space-saving layout change adds significant value to your Chandler property.",
+      },
+    ],
+  },
+
+  "bathroom-tile-installation": {
+    benefits: [
+      {
+        title: "Precision Patterns",
+        description: "Herringbone, basketweave, subway, and custom patterns that elevate your design.",
+        icon: "Palette",
+      },
+      {
+        title: "TCNA Waterproofing",
+        description: "Vapor tight membrane preparation and techniques prevent leaks and rot.",
+        icon: "Shield",
+      },
+      {
+        title: "Premium Porcelain",
+        description: "Access to dense porcelain (less than 0.5% water absorption) that resists Chandler's hard water scale.",
+        icon: "Sparkles",
+      },
+      {
+        title: "Resin Grout Durability",
+        description: "Stain resistant, non porous epoxy grout joints protect tiles and maintain beauty without sealing.",
+        icon: "Clock",
+      },
+    ],
+    issues: [
+      {
+        problem: "Water Seeping Behind Tile Walls",
+        solution: "We install vapor tight Schluter-KERDI waterproofing barriers behind every tile surround.",
+      },
+      {
+        problem: "Chipped and Cracked Tile Grout from Foundation Shift",
+        solution: "We set tiles using polymer-modified mortar and anti-fracture membranes that absorb local clay soil shifts.",
+      },
+      {
+        problem: "White Calcium Scale Building Up on Grout Lines",
+        solution: "We install non-porous epoxy grout that prevents minerals from binding to the joints.",
+      },
+    ],
+    tips: [
+      "Select Dense Porcelain: Non porous porcelain is highly waterproof and resists staining much better than ceramic.",
+      "Install Vapor Proof Membranes: Schluter-KERDI membranes protect framing studs from steam and moisture rot.",
+      "Choose Epoxy Grout: Non porous epoxy grout resists mold, is easy to clean, and never needs mineral sealing.",
+      "Seal Natural Stone Tiles: Porous stone like marble and travertine must be sealed before and after grouting to prevent spots.",
+    ],
+    faqs: [
+      {
+        question: "What is the difference between porcelain and ceramic tile?",
+        answer:
+          "Porcelain tile is made from highly refined clay fired at much higher temperatures than ceramic tile. This makes porcelain extremely dense, highly durable, and almost completely waterproof (absorbing less than 0.5% moisture), making it the perfect choice for high moisture shower walls and bathroom floors exposed to Chandler's hard water.",
+      },
+      {
+        question: "How long does it take to install a new tiled shower surround?",
+        answer:
+          "A standard tiled shower surround installation typically takes five to seven days of active construction. This timeframe includes removing your old tile down to the wall studs, building cement boards, applying waterproof KERDI membranes, setting tiles, and grouting.",
+      },
+      {
+        question: "Why should I choose epoxy grout instead of standard cement grout?",
+        answer:
+          "Standard cement grout is highly porous and easily absorbs moisture, mold spores, and minerals from Chandler hard water. Epoxy grout is made from durable resins, making it completely non porous. It resists mold growth, prevents staining, and never needs to be sealed. Call Us at (520) 569-3339 to get an epoxy grout quote.",
+      },
+      {
+        question: "Can you repair cracked tiles without replacing everything?",
+        answer:
+          "Yes, we can carefully remove and replace individual damaged tiles. However, if grout crumbling is widespread, we recommend checking the subfloor substrate underneath to ensure there is no hidden moisture rot.",
+      },
+      {
+        question: "What are the most popular tile patterns today in Chandler?",
+        answer:
+          "Large-format porcelain tiles are highly popular in Chandler because they minimize grout lines, reducing hard water cleaning effort. Herringbone and vertical stacked patterns are also highly requested for custom feature walls.",
+      },
+    ],
+  },
+
+  "bathroom-vanity-installation": {
+    benefits: [
+      {
+        title: "Solid Wood Vanities",
+        description: "Premium moisture resistant cabinetry frames designed around your storage needs and countertop space.",
+        icon: "Box",
+      },
+      {
+        title: "Durable Stone Countertops",
+        description: "Quartz, marble, and granite countertops sealed to resist water marks and calcium buildup.",
+        icon: "Sparkles",
+      },
+      {
+        title: "Aligned Drain Connections",
+        description: "Expert plumbing alignment with solid brass stop valves for safe leak free performance.",
+        icon: "Zap",
+      },
+      {
+        title: "Comfort Height Cabinetry",
+        description: "Modern thirty six inch comfort heights that make daily routines easier for adults.",
+        icon: "Palette",
+      },
+    ],
+    issues: [
+      {
+        problem: "Water Swollen Vanity Frames",
+        solution: "We install custom solid wood cabinets (marine-grade plywood) with high performance water resistant sealers.",
+      },
+      {
+        problem: "Awkward Under Sink Layouts",
+        solution: "We modify back panels and plumbing routing to clear vanity drawers without losing support.",
+      },
+      {
+        problem: "Poor Face Vanity Shadows",
+        solution: "We install professional lighting fixtures on both sides of mirrors to eliminate grooming shadows.",
+      },
+      {
+        problem: "Disorganized Countertop Clutter",
+        solution: "We design cabinets with pull out styling racks and integrated cabinet power outlets.",
+      },
+    ],
+    tips: [
+      "Select Non Porous Quartz Tops: Quartz resists hard water stains and never needs annual resealing.",
+      "Anchor Base to Stud Walls: Heavy stone tops require vanities to be fastened securely into wood studs.",
+      "Use Cedar Shims to Level: Ensure the cabinet box is perfectly level so drawers never stick or bind.",
+      "Use Heavy-Duty Undermount Brackets: Mount steel bracket support clips to guarantee sinks never sag or leak.",
+    ],
+    faqs: [
+      {
+        question: "Can you convert a single sink bathroom vanity into a double sink vanity?",
+        answer:
+          "Yes, we can convert a single sink vanity into a double vanity if the space is at least sixty inches wide. The process involves opening the drywall behind the vanity to split the single cold and hot water lines and running two separate waste pipes to support the double sinks. Call Us at (520) 569-3339 for an estimate.",
+      },
+      {
+        question: "How long does it take to install a new bathroom vanity?",
+        answer:
+          "A standard bathroom vanity installation typically takes two to three days of active construction. This timeframe includes careful demolition of your old cabinet, adjusting water and drain lines, leveling the new solid wood cabinet, mounting the stone countertop, and installing the faucets.",
+      },
+      {
+        question: "Do you offer custom vanity heights for Chandler homeowners?",
+        answer:
+          "Yes, we install both standard thirty two inch vanities and modern thirty six inch comfort height vanities. Comfort height vanities are identical to kitchen cabinet heights and reduce the need to bend over while washing, making them highly popular for master bathrooms.",
+      },
+      {
+        question: "How do you protect natural stone tops from hard water scaling?",
+        answer:
+          "We treat all granite and marble vanity tops with deep penetrating oil based impregnator sealers. For ultimate defense against Chandler's hard water minerals, we recommend choosing non-porous quartz countertops.",
+      },
+      {
+        question: "Do you install double sink vanities in small bathrooms?",
+        answer:
+          "Yes, we can custom design slim profile double vanities or floating modern vanities for tighter bathroom layouts. If the wall space is at least sixty inches, we can successfully integrate a functional double vanity.",
+      },
+    ],
+  },
+
+  "bathtub-remodeling": {
+    benefits: [
+      {
+        title: "Deep Soaking Comfort",
+        description: "We install modern soaking tubs that allow you to fully submerge for muscle relaxation.",
+        icon: "Droplets",
+      },
+      {
+        title: "Modern Tub Technology",
+        description: "Air and water jet tubs provide therapeutic massage benefits and turn your tub into a home spa.",
+        icon: "Zap",
+      },
+      {
+        title: "Stain Resistant Materials",
+        description: "We use high grade acrylic and enameled cast iron that resist scratches and hard water mineral scale.",
+        icon: "Shield",
+      },
+      {
+        title: "Better Drainage & Plumbing",
+        description: "Modern drain installations with proper floor slope prevent water pooling and ensure fast emptying.",
+        icon: "Wind",
+      },
+    ],
+    issues: [
+      {
+        problem: "Stained or Cracked Acrylic",
+        solution: "Replace old acrylic with modern tubs offering premium durability and contemporary aesthetics.",
+      },
+      {
+        problem: "Poor Water Drainage",
+        solution: "New drain installation with proper slope and modern drain assemblies ensures perfect water flow.",
+      },
+      {
+        problem: "Wasted Floor Space",
+        solution: "Upgrade to deeper freestanding soaking tubs or install corner tubs that maximize bathroom layout space.",
+      },
+      {
+        problem: "Hidden Plumbing Leaks",
+        solution: "Professional installation with proper Schluter waterproofing barriers prevents leaks and protects your subfloor.",
+      },
+    ],
+    tips: [
+      "Freestanding Tubs Add Luxury: Modern freestanding soaking tubs create a beautiful focal point and offer deeper water soaking.",
+      "Hire professional specialists for Jet Tubs: Air and water jets need specialized electrical wiring and plumbing lines; hire professional specialists.",
+      "Acrylic Tubs Resist Minerals: Acrylic reinforced with fiberglass is stain resistant, easy to clean, and resists local hard water minerals.",
+      "Anchor Safety Grab Bars to Studs: Install secure safety grab bars directly into wood wall studs during your tub remodel to prevent falls.",
+    ],
+    faqs: [
+      {
+        question: "What is the difference between a standard tub and a soaking tub?",
+        answer:
+          "A standard alcove tub is relatively shallow, with a water depth of only 10 to 12 inches. A deep soaking tub features taller walls that provide a water depth of 18 to 24 inches. This extra depth allows for comfortable, full body water submersion for muscle relaxation and a spa like experience.",
+      },
+      {
+        question: "How long does a bathtub replacement project take?",
+        answer:
+          "A straightforward bathtub replacement typically takes three to five days of active construction. This timeframe includes careful demolition of the old tub, upgrading drain lines, installing the new tub level, building the surround walls, and applying waterproof silicone sealants.",
+      },
+      {
+        question: "What bathtub materials are most durable against Chandler hard water?",
+        answer:
+          "Enameled cast iron is the most durable tub material, lasting over 50 years, but it is heavy and requires strong floor support. High quality acrylic reinforced with fiberglass is the most popular choice. Acrylic is highly stain resistant, easy to clean, and resists mineral scaling caused by local hard water.",
+      },
+      {
+        question: "Do you pull permits for bathtub remodeling in Chandler?",
+        answer:
+          "Yes, we coordinate all paperwork and pull required building permits from the City of Chandler Development Services Department. We handle the entire inspection process under , including plumbing and electrical reviews, to ensure your bathtub installation meets local safety codes.",
+      },
+      {
+        question: "How is a freestanding tub installed?",
+        answer:
+          "A freestanding tub is installed on a finished tile floor and connects to a dedicated drain box. It does not require surrounding walls, allowing for a clean, modern look and flexible placement within your master bathroom.",
+      },
+    ],
+  },
+
+  "shower-replacement": {
+    benefits: [
+      {
+        title: "Modern Shower Systems",
+        description: "Upgrade to rainfall showerheads, body jets, pressure balancing mixing valves, and smart shower systems.",
+        icon: "Droplets",
+      },
+      {
+        title: "Improved Water Efficiency",
+        description: "Low flow fixtures reduce water usage by 30 to 50 percent while maintaining excellent water pressure.",
+        icon: "Wind",
+      },
+      {
+        title: "Enhanced Safety Features",
+        description: "Anti slip flooring, stud anchored grab bars, and accessible design make showers safer for all family members.",
+        icon: "Shield",
+      },
+      {
+        title: "Contemporary Aesthetic",
+        description: "Modern fixtures and finishes like brushed nickel and matte black transform your bathroom look.",
+        icon: "Sparkles",
+      },
+    ],
+    issues: [
+      {
+        problem: "Sudden Water Temperature Swings",
+        solution: "We replace old valves with pressure balancing mixing valves to maintain safe, steady temperatures.",
+      },
+      {
+        problem: "Soft or Leaking Shower Pans",
+        solution: "We remove old pans down to the subfloor and install solid, multi layer waterproof pans.",
+      },
+      {
+        problem: "Hard Water Scale Scaling",
+        solution: "We install professional grade brass valves and scale resistant silicone nozzles that resist scaling.",
+      },
+      {
+        problem: "Outdated Metal Enclosures",
+        solution: "Update to contemporary finishes like brushed nickel, matte black, or champagne bronze with frameless glass.",
+      },
+    ],
+    tips: [
+      "Choose Eco-Friendly Low-Flow Fixtures: Modern low flow showerheads deliver excellent coverage while reducing utility bills.",
+      "Pressure Balancing Valves Provide Safety: These valves prevent scalding by maintaining preset temperatures, protecting young children and seniors.",
+      "Match Fixtures to Your Home's Design: Choose finishes that complement your home's style like brushed nickel or brass which hide water spots.",
+      "Install Quality Solid Metal Trim: Proper metal trim rings create clean transitions and leak proof seals between fixtures and walls.",
+    ],
+    faqs: [
+      {
+        question: "Can you replace a shower valve without tearing down the wall?",
+        answer:
+          "Yes, in many cases we can replace a shower valve cartridge or valve body through a small access panel behind the shower wall. If no access panel exists, we can carefully cut a neat opening in the adjoining room to replace the valve without disturbing your beautiful shower tile. Contact our team at (520) 569-3339.",
+      },
+      {
+        question: "What are the signs that a shower pan needs to be replaced?",
+        answer:
+          "The most common signs of a failing shower pan include water stains on the ceiling below the bathroom, soft spots when stepping near the drain, musty mildew smells that do not go away, and cracked grout lines along the bottom tile joints where the wall meets the floor.",
+      },
+      {
+        question: "Why should I install a pressure balancing shower valve?",
+        answer:
+          "A pressure balancing shower valve maintains a constant ratio of hot and cold water pressure. This valve prevents the water from becoming dangerously hot or freezing cold when toilet flushing or laundry cycles run elsewhere in the home, protecting children and seniors from scalding.",
+      },
+      {
+        question: "What shower finishes are most durable in Chandler?",
+        answer:
+          "Brushed nickel and stainless steel are the most durable finishes. They hide water spots and resist hard water mineral deposits extremely well, whereas chrome and matte black require much more frequent cleaning.",
+      },
+      {
+        question: "How long does a shower replacement project take?",
+        answer:
+          "A complete shower replacement typically takes three to five days of active construction. This timeframe includes wall demolition, updating plumbing lines, installing the waterproof pan, tiling the walls, and mounting new hardware fixtures.",
+      },
+    ],
+  },
+
+  "tub-to-shower-conversion": {
+    benefits: [
+      {
+        title: "Increased Accessibility",
+        description: "Walk in showers eliminate stepping over high tub walls, making bathing safer for all ages.",
+        icon: "Accessibility",
+      },
+      {
+        title: "Space Efficiency",
+        description: "Showers take less space than tubs, potentially opening up your bathroom layout.",
+        icon: "Box",
+      },
+      {
+        title: "Faster Daily Routines",
+        description: "Quick showers are ideal for busy families. Conversions cater to modern lifestyles and preferences.",
+        icon: "Clock",
+      },
+      {
+        title: "Modern Design & Functionality",
+        description: "Contemporary shower systems with luxury fixtures transform your bathing experience.",
+        icon: "Sparkles",
+      },
+    ],
+    issues: [
+      {
+        problem: "Unsafe tub entry with high step thresholds",
+        solution: "Safe tub removal and installation of curbless or low profile walk in showers with easy access.",
+      },
+      {
+        problem: "Clogged drains and slow plumbing flow",
+        solution: "We expand the plumbing drain line from 1.5 inches to 2 inches to comply with local plumbing code.",
+      },
+    ],
+    tips: [
+      "Plan Drainage Carefully: Shower floors must slope properly toward drains to prevent pooling. Professional drain expansion is essential.",
+      "Install Grab Bars for Safety: Grab bars in showers prevent slips and provide essential safety for seniors or mobility limited users.",
+      "Choose Anti Slip Flooring: Textured mosaic tile or specialized slip resistant porcelain reduces slipping risk in wet shower environments.",
+      "Consider Waterproofing First: Proper waterproofing membranes protect subfloors from leaks; this quality investment pays for itself.",
+    ],
+    faqs: [
+      {
+        question: "How long does it take to convert a tub to a walk in shower?",
+        answer:
+          "A tub to shower conversion takes between 3 and 5 days of active work. Day 1 is demolition of the old tub. Day 2 is plumbing valve updates and drain line expansion from 1.5 inches to 2 inches. Day 3 is waterproofing and laying the shower pan. Day 4 is tile setting and grouting. Day 5 is mounting the shower doors and final walkthrough. Call Us at (520) 569-3339 to book your conversion.",
+      },
+      {
+        question: "Why is a 2 inch drain line required for a shower in Chandler?",
+        answer:
+          "Uniform plumbing codes require a 2 inch drain line for walk in showers, whereas bathtubs only require a 1.5 inch drain. A shower pan holds less water than a tub, so water must drain faster to prevent flooding. Our plumbers cut the concrete slab and upgrade this line during demolition to ensure compliance with the Arizona Plumbing Code."
+      }
+    ],
+  },
+
+  "walk-in-showers": {
+    benefits: [
+      {
+        title: "Universal Accessibility Design",
+        description: "No steps, wide entry, and grab bars provide safe access for elderly, disabled, and all family members.",
+        icon: "Accessibility",
+      },
+      {
+        title: "Open, Spacious Feel",
+        description: "Walk in showers visually open up your bathroom and create a luxurious, spa like atmosphere.",
+        icon: "Wind",
+      },
+      {
+        title: "Wet Room Aesthetic",
+        description: "Modern wet rooms blend seamlessly with bathroom design for clean, contemporary looks.",
+        icon: "Sparkles",
+      },
+      {
+        title: "Easier Cleaning & Maintenance",
+        description: "Open designs with minimal barriers make thorough cleaning quick and effortless.",
+        icon: "Clock",
+      },
+    ],
+    issues: [
+      {
+        problem: "Water Splashing Out",
+        solution: "We calculate the exact floor slope (1/4 inch per foot) and place linear drains strategically to contain water completely.",
+      },
+      {
+        problem: "Standing Water and Mold",
+        solution: "We build precise concrete shower pans that slope perfectly toward the drain to prevent pooling.",
+      },
+      {
+        problem: "Lack of Wall Storage",
+        solution: "We build custom recessed tile niches into the wall framing for a clean, organized layout.",
+      },
+      {
+        problem: "Slippery Floor Hazards",
+        solution: "We install smaller textured mosaic tiles or slip resistant porcelain to provide excellent foot grip.",
+      },
+    ],
+    tips: [
+      "Install a Linear Drain: Linear drains handle water flow better than point drains and look sleek in modern showers.",
+      "Use Niche Storage: Built-in niches keep shampoo and soap organized without cluttering the floor space.",
+      "Half-Glass Enclosures Work Great: Glass dividers contain water splash while maintaining the open feel of walk-in designs.",
+      "Large Format Tile Looks Modern: Large tiles create clean lines and fewer grout joints in walk-in showers.",
+    ],
+    faqs: [
+      {
+        question: "How do walk-in showers contain water without a door?",
+        answer:
+          "Proper floor slope is the key to containing water in a doorless walk in shower. We slope the shower floor one quarter inch per foot toward a high flow linear drain. We also build a partial glass partition wall that blocks splashes while keeping the entrance completely open.",
+      },
+      {
+        question: "What is the minimum size required for a walk-in shower?",
+        answer:
+          "A comfortable walk in shower requires a minimum footprint of 36 inches by 60 inches. If you want a completely open, doorless design that does not splash water onto your dry bathroom floor, we recommend a layout of at least 42 inches by 72 inches.",
+      },
+      {
+        question: "Do walk-in showers increase home resale value?",
+        answer:
+          "Yes, high end walk in showers are highly desirable for modern homebuyers in the East Valley. Replacing an underutilized tub with a custom walk in shower is one of the most reliable ways to improve home equity and make your property stand out.",
+      },
+      {
+        question: "Do you install stud anchored grab bars for safety?",
+        answer:
+          "Yes, we anchor every grab bar straight into heavy wood wall studs behind your shower walls. This ensures the bars can easily support adult body weight, providing essential safety for family members of all ages, especially in retirement areas like Sun Lakes.",
+      },
+      {
+        question: "How long does a walk-in shower installation take in Chandler?",
+        answer:
+          "A standard walk-in shower installation typically takes seven to ten days of active construction under . This includes demolition of your old enclosure, custom pan forming, multi layer waterproofing, tile setting, and final glass installation. Call Us at (520) 569-3339 to book.",
+      },
+    ],
+  },
+  "cabinet-countertop-installation": {
+    benefits: [
+      {
+        title: "Custom Wood Cabinets",
+        description: "Solid wood cabinet frames and doors designed specifically for your items, habits, and lifestyle.",
+        icon: "Box",
+      },
+      {
+        title: "Premium Stone Countertops",
+        description: "Quartz, granite, and marble countertops combine beauty, durability, and luxury aesthetics.",
+        icon: "Sparkles",
+      },
+      {
+        title: "Heavy Stud Anchoring",
+        description: "Professional vanity installations anchored directly into wall studs to support heavy stone securely.",
+        icon: "Zap",
+      },
+      {
+        title: "Significant Home Value Boost",
+        description: "High quality cabinetry upgrades add exceptional value when selling your property.",
+        icon: "TrendingUp",
+      },
+    ],
+    issues: [
+      {
+        problem: "Swollen and Sagging Cabinets",
+        solution: "We install solid wood cabinetry with protective moisture resistant coatings.",
+      },
+      {
+        problem: "Stained and Scratched Countertops",
+        solution: "We replace old countertops with non porous quartz that resists stains and mineral damage.",
+      },
+      {
+        problem: "Misaligned Doors and Drawers",
+        solution: "We level every cabinet base perfectly using structural shims during installation.",
+      },
+      {
+        problem: "Leaking Undermount Sinks",
+        solution: "We install heavy duty steel brackets to anchor undermount sinks permanently to the stone.",
+      },
+    ],
+    tips: [
+      "Choose Quartz for Low Maintenance: Non porous quartz never needs sealing and resists hard water spots.",
+      "Install Under Vanity Lighting: LED strip lights improve visibility and create modern nighttime ambiance.",
+      "Use Soft Close Hardware: Soft close hinges prevent slamming and extend the overall life of cabinet doors.",
+      "Plan Counter Storage First: Built in drawers and organizers keep countertops free from daily clutter.",
+    ],
+    faqs: [
+      {
+        question: "What is the difference between quartz and granite countertops?",
+        answer:
+          "Granite is a 100 percent natural stone that is highly unique but porous. It requires regular sealing to prevent cosmetic stains. Quartz is an engineered stone made from natural quartz crystals and durable resins. It is completely non porous, never requires sealing, and is highly stain resistant.",
+      },
+      {
+        question: "How long does it take to install new vanities and countertops?",
+        answer:
+          "A standard bathroom cabinet and countertop installation typically takes five to seven days of active construction. This timeframe includes removing your old vanity, preparing the plumbing lines, anchoring the new cabinets, setting the fabricated stone, and installing the sink drains. Call Us at (520) 569-3339.",
+      },
+      {
+        question: "Do you offer cabinet refacing or only full replacement?",
+        answer:
+          "If your original cabinet structural boxes are solid and free of moisture damage, we can easily perform cabinet refacing. Refacing involves keeping the original frames but replacing the doors, drawer fronts, and hardware, saving you time and home renovation costs.",
+      },
+      {
+        question: "What solid hardwoods do you install for bathroom cabinetry?",
+        answer:
+          "We primarily install kiln dried solid maple, birch, and oak vanities. Sourcing kiln dried hardwoods prevents the wood cells from warping or cracking in our dry desert air, ensuring long term durability.",
+      },
+      {
+        question: "How do you secure undermount sinks to the stone countertop?",
+        answer:
+          "We never rely on silicone glue alone to support sinks. We secure every undermount sink using industrial steel mounting clips and structural brackets anchored straight to the underside of the stone.",
+      },
+    ],
+  },
+
+  "bathroom-flooring-installation": {
+    benefits: [
+      {
+        title: "Waterproof Tile & Stone",
+        description: "Dense porcelain tiles that absorb virtually zero moisture and resist mold growth.",
+        icon: "Shield",
+      },
+      {
+        title: "Anti Slip Safety",
+        description: "Textured mosaic and porcelain floor surfaces that prevent slips and falls.",
+        icon: "AlertTriangle",
+      },
+      {
+        title: "Epoxy Grout Durability",
+        description: "Stain resistant, non porous epoxy grout joints that will not crumble or discolor.",
+        icon: "Clock",
+      },
+      {
+        title: "Foundation Crack Protection",
+        description: "Anti fracture underlayment membranes that prevent slab shifts from cracking your tile.",
+        icon: "Palette",
+      },
+    ],
+    issues: [
+      {
+        problem: "Cracked Floor Tiles",
+        solution: "We install flexible polymer modified thinset and anti fracture Ditra membranes to absorb subfloor shifts.",
+      },
+      {
+        problem: "Crumbling Grout Lines",
+        solution: "We reinforce sagging wood subfloors and install durable cement backer boards before tiling.",
+      },
+      {
+        problem: "Stained and Moldy Grout",
+        solution: "We use resin based, non porous epoxy grout that repels water and prevents mold.",
+      },
+      {
+        problem: "Slippery Wet Tile Floors",
+        solution: "We replace old smooth tiles with high traction, slip resistant textured porcelain floor designs.",
+      },
+    ],
+    tips: [
+      "Select Dense Porcelain: Non porous porcelain is highly waterproof and resists staining much better than ceramic.",
+      "Install Anti Fracture Membranes: Schluter-Ditra membranes absorb subfloor concrete movement to prevent tile cracks.",
+      "Choose Epoxy Grout Joints: Epoxy grout resists mold, is easy to clean, and never needs mineral sealer.",
+      "Verify Slip Resistance Rating: Check that your floor tiles have high textured friction ratings to prevent falls.",
+    ],
+    faqs: [
+      {
+        question: "What is the best flooring material for a wet bathroom floor?",
+        answer:
+          "Textured porcelain tile is the highest performing flooring material for bathrooms. Porcelain is extremely dense, absorbs less than 0.5 percent moisture, resists mold naturally, and will not warp like wood laminates when exposed to steam or water splashes.",
+      },
+      {
+        question: "How long does it take to install new bathroom floor tile?",
+        answer:
+          "A standard bathroom floor tile installation typically takes three to five days of active construction under . This timeframe includes removing your old flooring, leveling the concrete slab, installing crack isolation membranes, setting the tile, and applying the epoxy grout. Call Us at (520) 569-3339.",
+      },
+      {
+        question: "Why do my bathroom floor tile grout lines crack and crumble?",
+        answer:
+          "Grout lines crumble when the subfloor beneath the tile bends or flexes under foot traffic. In Arizona slab homes, it is often due to clay soil shifting under the concrete slab. We install Schluter-Ditra anti-fracture membranes to isolate the tile from slab cracks.",
+      },
+      {
+        question: "Does bathroom flooring installation require foundation repairs?",
+        answer:
+          "No, but it requires slab crack treatment. If your desert concrete slab has minor settling cracks, we install flexible elastomeric membranes over the cracks before tiling to isolate the tile from slab movement.",
+      },
+      {
+        question: "Can you install radiant heated floors under bathroom tile?",
+        answer:
+          "Yes, we can easily lay low profile electric heating cables inside the membrane underlayment before setting your new porcelain tiles. Heated floors dry out moisture quickly and provide luxurious winter warmth.",
+      },
+    ],
+  },
+  "bathroom-lighting-installation": {
+    benefits: [
+      {
+        title: "Layered Light Designs",
+        description: "Balanced ceiling lights, mirror task lights, and accent lights eliminate shadows.",
+        icon: "Lightbulb",
+      },
+      {
+        title: "Energy Efficient LEDs",
+        description: "Modern LEDs use far less power and provide clear shadow free illumination.",
+        icon: "Zap",
+      },
+      {
+        title: "Dedicated circuit Safety",
+        description: "Professional dedicated circuits with GFCI shock protection guarantee home safety.",
+        icon: "Mirror",
+      },
+      {
+        title: "Moisture Sealed Fixtures",
+        description: "Wet zone vapor proof fixtures that resist heavy steam and corrosion.",
+        icon: "Sparkles",
+      },
+    ],
+    issues: [
+      {
+        problem: "Heavy Facial Shadows",
+        solution: "We install dual vertical sconces on both sides of mirror glass to cast flattering light.",
+      },
+      {
+        problem: "Tripping Circuit Breakers",
+        solution: "We run dedicated twenty amp circuits to handle hair dryers and styling irons safely.",
+      },
+      {
+        problem: "Rusted Metal Fixtures",
+        solution: "We install moisture resistant, sealed metal fixtures that will not rust from shower steam.",
+      },
+      {
+        problem: "Harsh Blinding Morning Light",
+        solution: "We install customizable smart dimmer switches to keep morning light soft and comfortable.",
+      },
+    ],
+    tips: [
+      "Position sconces at Eye Level: Mounting fixtures sixty five inches high provides perfect mirror views.",
+      "Choose Warm 3000K LEDs: Warm white colors provide accurate skin tones and welcoming ambiance.",
+      "Install Smart Dimmer Switches: Dimmers let you customize lighting levels for different times of day.",
+      "Use Sealed Shower Fixtures: Vapor proof LEDs inside wet areas prevent moisture corrosion and electrical shorts.",
+    ],
+    faqs: [
+      {
+        question: "What is the best color temperature for bathroom vanity lighting?",
+        answer:
+          "We highly recommend using warm white LED lighting with a color temperature of 3000 Kelvin. This color temperature provides a natural, clean light that matches skin tones perfectly while avoiding the cold, harsh blue hue of daylight bulbs.",
+      },
+      {
+        question: "How do I eliminate shadows when looking in the bathroom mirror?",
+        answer:
+          "To eliminate all grooming shadows, we install vertical wall sconces on both sides of your mirror. The fixtures should be spaced thirty six inches apart and mounted sixty five to seventy five inches above your floor to match eye level.",
+      },
+      {
+        question: "Does bathroom lighting installation require a dedicated circuit?",
+        answer:
+          "Yes, modern building codes require bathrooms to be on a dedicated twenty amp circuit. This circuit must be fully protected by a Ground Fault Circuit Interrupter to prevent electrical shocks when you run hair dryers or styling irons.",
+      },
+      {
+        question: "Can you install lighting inside the shower enclosure?",
+        answer:
+          "Yes, we install specialized vapor proof LED recessed lights inside shower wet zones. These fixtures are completely sealed to prevent steam and water drops from penetrating the electrical wiring.",
+      },
+      {
+        question: "Why should I upgrade to LED lights inside my bathroom?",
+        answer:
+          "LED lightbulbs produce very little heat, require eighty percent less energy than hot incandescent bulbs, and last over twenty thousand hours, dramatically reducing your utility bills and maintenance costs.",
+      },
+    ],
+  },
+
+  "tub-removal": {
+    benefits: [
+      {
+        title: "Reclaimed Bathroom Space",
+        description: "Removing a tub frees up valuable floor space for walk-in showers or other fixtures.",
+        icon: "Box",
+      },
+      {
+        title: "Reduced Utility Costs",
+        description: "Removing hot tub water usage reduces monthly water and heating bills significantly.",
+        icon: "DollarSign",
+      },
+      {
+        title: "Easier Accessibility",
+        description: "No tub rim means safer entry for elderly family members and those with mobility concerns.",
+        icon: "Accessibility",
+      },
+      {
+        title: "Modern Bathroom Aesthetic",
+        description: "Open floor plans with walk-in showers create contemporary, spa-like bathroom designs.",
+        icon: "Sparkles",
+      },
+    ],
+    issues: [
+      {
+        problem: "Excessive Weight Hazards",
+        solution: "We extract heavy tubs by safely cutting them into manageable sections with heavy duty diamond saws.",
+      },
+      {
+        problem: "Hidden Subfloor Rot",
+        solution: "We inspect wood floor joists, replace water damaged underlayment, and lay fresh rot resistant subflooring.",
+      },
+      {
+        problem: "Corroded Plumbing Lines",
+        solution: "We replace outdated plumbing lines with modern flexible PEX water pipes and durable PVC drain lines.",
+      },
+      {
+        problem: "Wasted Floor Footprint",
+        solution: "We reconfigure your bathroom layout to convert the newly freed floor footprint into a luxury walk in shower.",
+      },
+    ],
+    tips: [
+      "Plan Replacement Design Early: Decide exactly what features will replace the tub before beginning demolition.",
+      "Inspect Wall Framing: Have your remodeling team inspect the wood studs for moisture damage as soon as the tub is out.",
+      "Upgrade Sewer Lines: Take advantage of the open subfloor to replace old cast iron plumbing with durable PVC.",
+      "Keep One Bath in the House: Maintain at least one functional tub in the home to preserve resale appeal for families.",
+    ],
+    faqs: [
+      {
+        question: "How heavy is a standard bathtub and how do you remove it?",
+        answer:
+          "An old cast iron bathtub typically weighs between 250 and 400 pounds. To extract it safely without destroying your bathroom walls, we often use specialized diamond saw blades to cut the heavy tub into two manageable pieces. We then carry the sections out on protected heavy duty dollies.",
+      },
+      {
+        question: "What happens to the old tub after it is removed?",
+        answer:
+          "We handle all hauling, loading, and disposal as part of our comprehensive service. We transport the old fiberglass or metal tub directly to a local recycling or waste management facility in Chandler, leaving your home completely clean and free of heavy construction debris.",
+      },
+      {
+        question: "Will removing a bathtub require major plumbing changes?",
+        answer:
+          "Yes, removing a tub generally requires capping the low water lines and capping off the waste drain. If you are converting the space into a shower, we will relocate the drain line and expand the plumbing line from a standard one and a half inch tub pipe to a high flow two inch shower pipe.",
+      },
+      {
+        question: "How long does a standard tub removal take?",
+        answer:
+          "The physical extraction of a bathtub takes between two and four hours of careful work. If we are repairing the subfloor, replacing corroded framing, or capping pipes, the complete site preparation takes one full day.",
+      },
+      {
+        question: "Do you protect my home from dust during demolition?",
+        answer:
+          "Yes, we seal off the bathroom doorways using heavy plastic zip walls and set up negative air scrubbers. This keeps fine drywall dust, plaster, and fiberglass particles from escaping into your clean living spaces.",
+      },
+    ],
+  },
+  "home-renovation": {
+    benefits: [
+      {
+        title: "Complete Property Transformation",
+        description: "Modernize your entire home with a cohesive design, improved flow, and updated finishes throughout.",
+        icon: "Home",
+      },
+      {
+        title: "Optimized Living Space",
+        description: "Remove walls, reconfigure layouts, and create the open-concept living area you've always wanted.",
+        icon: "Layout",
+      },
+      {
+        title: "Enhanced Energy Efficiency",
+        description: "Update insulation, windows, and systems during renovation to lower your monthly utility bills.",
+        icon: "Zap",
+      },
+      {
+        title: "Significant Value Increase",
+        description: "Whole-house renovations offer the highest potential equity gain for Chandler homeowners.",
+        icon: "TrendingUp",
+      },
+    ],
+    issues: [
+      {
+        problem: "Choppy, compartmentalized layouts typical of older East Valley homes",
+        solution: "Structural wall removal and beam installation to create a modern, open-concept floor plan.",
+      },
+      {
+        problem: "Outdated electrical and plumbing systems that don't meet modern needs",
+        solution: "Full system upgrades to ensure safety, efficiency, and support for modern appliances.",
+      },
+      {
+        problem: "Mismatched flooring and finishes creating a disjointed aesthetic",
+        solution: "Cohesive material selection and design language applied across the entire home.",
+      },
+      {
+        problem: "Wasted square footage in underutilized rooms or large hallways",
+        solution: "Layout redesign to convert wasted space into functional areas like home offices or pantries.",
+      },
+    ],
+    tips: [
+      "Plan for Temporary Living: Whole-home renovations are invasive. We help you plan for a temporary kitchen or living area during construction.",
+      "Invest in Structural Integrity: If you're removing walls, always work with professional specialists who understand East Valley load-bearing requirements.",
+      "Stay Consistent with Finishes: Choosing a unified palette for flooring and paint makes your home feel larger and more intentional.",
+      "Don't Skip the Permitting: Proper permits protect your investment and ensure your home remains easy to sell in the future.",
+    ],
+    faqs: [
+      {
+        question: "How much does a whole-home renovation cost in Chandler?",
+        answer:
+          "Whole-home renovations vary based on material selection, structural layout shifts, and the age of the property. We offer free on-site consultations to discuss your design goals and prepare a detailed, line-item proposal for your project.",
+      },
+      {
+        question: "How long will I be out of my kitchen or home during renovation?",
+        answer:
+          "Whole-house projects usually take 3–6 months. We work in phases to keep your home as livable as possible, but we often recommend temporary housing for major structural phases.",
+      },
+      {
+        question: "Do you handle the architectural and design plans?",
+        answer:
+          "Yes. We are a design-build firm. We handle everything from the initial 3D renderings and structural engineering to the final coat of paint.",
+      },
+      {
+        question: "Are permits required for interior renovations in Chandler?",
+        answer:
+          "Yes, most significant interior changes (plumbing, electrical, structural) require permits from the City of Chandler. We handle the entire application and inspection process.",
+      },
+    ],
+  },
+
+  "flooring": {
+    benefits: [
+      {
+        title: "Durable Desert-Ready Floors",
+        description: "Materials selected to withstand Chandler's heat, dust, and heavy foot traffic.",
+        icon: "Shield",
+      },
+      {
+        title: "Seamless Professional Install",
+        description: "Laser-leveled transitions and precision cuts for a flawless look from room to room.",
+        icon: "Ruler",
+      },
+      {
+        title: "Water-Resistant Solutions",
+        description: "High-grade LVP and porcelain tile options perfect for kitchens, baths, and laundry rooms.",
+        icon: "Droplets",
+      },
+      {
+        title: "Easy Maintenance & Cleanup",
+        description: "Modern flooring options that resist staining and are simple to clean in our dusty climate.",
+        icon: "Check",
+      },
+    ],
+    issues: [
+      {
+        problem: "Cracked or lifting floor tiles due to foundation settling or poor install",
+        solution: "Proper substrate preparation and use of crack-isolation membranes before new installation.",
+      },
+      {
+        problem: "Worn, stained carpet that traps desert dust and allergens",
+        solution: "Replacement with hypoallergenic hard-surface flooring like LVP or wood-look tile.",
+      },
+      {
+        problem: "Uneven floors creating trip hazards or gaps under baseboards",
+        solution: "Professional floor leveling and proper subfloor prep to ensure a perfectly flat surface.",
+      },
+      {
+        problem: "Outdated flooring that makes a home feel aged and dark",
+        solution: "Installation of modern, large-format tiles or light-colored planks to brighten the space.",
+      },
+    ],
+    tips: [
+      "Prioritize LVP for Active Homes: Luxury Vinyl Plank is waterproof, scratch-resistant, and perfect for families with pets.",
+      "Don't Skimp on Underlayment: A high-quality underlayment provides better sound dampening and a softer feel underfoot.",
+      "Plan for Transition Strips: Ensure smooth transitions between different flooring types (e.g., tile to wood) for a professional finish.",
+      "Acclimate Your Materials: Hardwood and some LVP products need 48–72 hours to adjust to your home's humidity before installation.",
+    ],
+    faqs: [
+      {
+        question: "Which is better for Chandler homes: Tile or LVP?",
+        answer:
+          "Both are excellent. Tile is cooler and more traditional for the desert, while LVP is softer, warmer, and more cost-effective. We help you choose based on your room use and budget.",
+      },
+      {
+        question: "How long does a standard flooring installation take?",
+        answer:
+          "Most flooring projects take 3–5 days. Large whole-home installations can take 7–10 days. This includes prep, removal of old flooring, and final baseboard installation.",
+      },
+      {
+        question: "Do you install new baseboards with the flooring?",
+        answer:
+          "Yes! We highly recommend new baseboards for a clean, professional finish. We can install standard or custom-profile baseboards as part of your project.",
+      },
+      {
+        question: "Can you install new flooring over existing tile?",
+        answer:
+          "In some cases, yes, if the existing tile is flat and secure. However, we usually recommend removing old flooring to ensure the best possible subfloor preparation.",
+      },
+    ],
+  },
+
+  "roofing": {
+    benefits: [
+      {
+        title: "Monsoon-Ready Protection",
+        description: "Reinforced roofing systems designed to withstand high winds and heavy Arizona rains.",
+        icon: "Shield",
+      },
+      {
+        title: "Energy Efficiency Upgrades",
+        description: "Reflective materials and proper ventilation that lower attic temperatures and AC costs.",
+        icon: "Zap",
+      },
+      {
+        title: "Long-Term Warranty Peace of Mind",
+        description: "Quality materials and workmanship backed by industry-leading warranties.",
+        icon: "ShieldCheck",
+      },
+      {
+        title: "Instant Curb Appeal Boost",
+        description: "A new roof dramatically improves the exterior appearance and value of your home.",
+        icon: "Home",
+      },
+    ],
+    issues: [
+      {
+        problem: "Aged underlayment failing beneath tile roofs",
+        solution: "Tile R&R (Remove and Replace) with high-grade synthetic underlayment for 30+ year protection.",
+      },
+      {
+        problem: "Missing or damaged shingles after a desert storm",
+        solution: "Prompt repair or replacement with wind-rated architectural shingles.",
+      },
+      {
+        problem: "Improper attic ventilation causing high energy bills",
+        solution: "Installation of O'Hagin vents, ridge vents, or solar attic fans to improve airflow.",
+      },
+      {
+        problem: "Leaks around valleys, chimneys, or skylights",
+        solution: "Professional flashing replacement and waterproof sealing of all roof penetrations.",
+      },
+    ],
+    tips: [
+      "Inspect After Every Monsoon: Check for slipped tiles or missing shingles after major storms to catch leaks early.",
+      "Don't Wait for a Leak: If your roof is 20+ years old, the underlayment is likely reaching the end of its life.",
+      "Choose Light Colors for Energy Savings: Lighter roof colors reflect more sunlight, keeping your Chandler home cooler.",
+      "Clear Debris Regularly: Keep valleys and gutters clear of desert leaves and debris to prevent water backup.",
+    ],
+    faqs: [
+      {
+        question: "How long does a roof last in Chandler, AZ?",
+        answer:
+          "Tile roofs can last 50+ years, but the underlayment needs replacement every 20–25 years. Shingle roofs typically last 15–20 years in our intense sun.",
+      },
+      {
+        question: "What is a 'Tile R&R'?",
+        answer:
+          "It stands for Remove and Replace. We carefully remove your existing tiles, replace the failed underlayment, and then reinstall the original tiles. This is a cost-effective way to get a 'new' roof.",
+      },
+      {
+        question: "How do I know if I have storm damage?",
+        answer:
+          "Look for slipped tiles, missing shingles, or grit in your gutters. We provide free professional roof inspections to document damage for insurance claims.",
+      },
+      {
+        question: "Does a new roof help with home cooling?",
+        answer:
+          "Yes! Modern underlayments and ventilation systems can reduce attic temperatures by 20–30 degrees, significantly lowering your AC workload.",
+      },
+    ],
+  },
+
+  "painting": {
+    benefits: [
+      {
+        title: "UV-Resistant Exterior Protection",
+        description: "High-quality paints designed to withstand the intense Arizona sun without fading or peeling.",
+        icon: "Sun",
+      },
+      {
+        title: "Flawless Interior Finishes",
+        description: "Professional preparation and application for smooth, beautiful walls and ceilings.",
+        icon: "Check",
+      },
+      {
+        title: "Instant Home Modernization",
+        description: "A fresh color palette is the fastest and most affordable way to update your home's look.",
+        icon: "Palette",
+      },
+      {
+        title: "Meticulous Prep & Cleanup",
+        description: "We handle all masking, patching, and cleaning so you don't have to worry about a mess.",
+        icon: "Sparkles",
+      },
+    ],
+    issues: [
+      {
+        problem: "Fading and chalking exterior paint from UV exposure",
+        solution: "Full exterior repaint with premium 100% acrylic paints formulated for the desert.",
+      },
+      {
+        problem: "Cracked or peeling stucco surfaces",
+        solution: "Patching, sealing, and painting with elastomeric coatings that move with your home.",
+      },
+      {
+        problem: "Outdated, dark interior colors making rooms feel small",
+        solution: "Interior repainting with light, modern neutrals to open up and brighten your living spaces.",
+      },
+      {
+        problem: "Scuffed baseboards and dingy trim",
+        solution: "Professional trim and door painting using durable, easy-to-clean semi-gloss finishes.",
+      },
+    ],
+    tips: [
+      "Don't Skip the Primer: Especially on new drywall or stucco, proper priming ensures paint adhesion and color accuracy.",
+      "Choose the Right Sheen: Use Eggshell or Satin for walls (cleanable) and Semi-Gloss for trim and doors (durable).",
+      "Invest in Quality Paint: Premium paints have more solids, providing better coverage and lasting years longer.",
+      "Test Colors in Your Own Light: Paint small samples on different walls to see how Chandler's intense sunlight affects the hue.",
+    ],
+    faqs: [
+      {
+        question: "How often should I paint my home's exterior in Chandler?",
+        answer:
+          "Due to the intense sun, most Chandler homes need an exterior repaint every 5–8 years to protect the stucco and wood trim.",
+      },
+      {
+        question: "Do you handle drywall repairs before painting?",
+        answer:
+          "Yes! We fix cracks, holes, and texture issues as part of our standard preparation process to ensure a perfect final finish.",
+      },
+      {
+        question: "How long does it take to paint a whole house?",
+        answer:
+          "An exterior repaint usually takes 3–5 days. A full interior repaint for a standard home takes 4–7 days depending on the number of rooms.",
+      },
+      {
+        question: "Can you help me choose the right colors?",
+        answer:
+          "Absolutely. We provide color consultations and can help you select a palette that matches your home's style and complies with any HOA requirements.",
+      },
+    ],
+  },
+};

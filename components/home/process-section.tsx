@@ -1,0 +1,72 @@
+import { Phone, Ruler, HardHat, Sparkles } from "lucide-react";
+
+const steps = [
+  {
+    number: "01",
+    icon: Phone,
+    title: "Free Consultation",
+    description:
+      "Discuss your bathroom remodel ideas with our team. We'll evaluate your existing bathroom, answer your questions over the phone, and recommend the best remodeling options for your home. A quick call helps avoid the confusion that often comes with text messages.",
+  },
+  {
+    number: "02",
+    icon: Ruler,
+    title: "Custom Bathroom Design",
+    description:
+      "Choose the perfect layout, walk-in shower, vanity, tile, and finishes for your bathroom renovation. We'll help create a design that fits your style, space, and budget.",
+  },
+  {
+    number: "03",
+    icon: HardHat,
+    title: "Professional Bathroom Remodeling",
+    description:
+      "From tub-to-shower conversions to complete bathroom remodeling, every detail is completed with quality workmanship and attention to detail for a smooth remodeling experience.",
+  },
+  {
+    number: "04",
+    icon: Sparkles,
+    title: "Final Walkthrough",
+    description:
+      "We review the completed bathroom with you to ensure everything meets your expectations, leaving you with a beautiful, functional space you'll enjoy for years to come.",
+  },
+];
+
+export default function ProcessSection() {
+  return (
+    <section className="py-12 lg:py-20 bg-foreground text-background">
+      <div className="w-full max-w-[1400px] mx-auto px-8 lg:px-12">
+        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+          <span className="text-accent text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] mb-3 block">
+            Our Process
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-background text-balance">
+            Our Remodeling Process
+          </h2>
+          <p className="text-background/70 text-lg leading-relaxed font-semibold">
+            From consultation to completion, we make bathroom remodeling in Chandler, AZ simple, organized, and tailored to your home.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 items-stretch">
+          {steps.map((step, index) => (
+            <div key={step.number} className="relative h-full">
+              {index < steps.length - 1 && (
+                <div className="hidden lg:block absolute top-10 left-1/2 w-full h-px bg-background/20" />
+              )}
+              <div className="relative bg-background/5 border border-background/10 rounded-xl p-8 text-center h-full flex flex-col items-center">
+                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-sm font-bold px-4 py-1 rounded-full">
+                  {step.number}
+                </span>
+                <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6 mt-4">
+                  <step.icon className="w-8 h-8 text-accent" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold mb-3 text-background">{step.title}</h3>
+                <p className="text-background/60 text-sm leading-relaxed">{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

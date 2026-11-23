@@ -1,0 +1,85 @@
+import Link from "next/link";
+import { MapPin } from "lucide-react";
+import { getCanonicalNeighborhoodLink } from "@/lib/seo-canonical-map";
+import InteractiveMap from "@/components/seo/interactive-map";
+
+
+const areas = [
+  { name: "Chandler", href: "/bathroom-remodeling-chandler-az/" },
+  { name: "Gilbert", href: "/bathroom-remodeling-gilbert-az/" },
+  { name: "Mesa", href: "/bathroom-remodeling-mesa-az/" },
+  { name: "Tempe", href: "/bathroom-remodeling-tempe-az/" },
+  { name: "Queen Creek", href: "/bathroom-remodeling-queen-creek-az/" },
+  { name: "Apache Junction", href: "/bathroom-remodeling-apache-junction-az/" },
+  { name: "Ocotillo", href: getCanonicalNeighborhoodLink("ocotillo") },
+  { name: "Fulton Ranch", href: getCanonicalNeighborhoodLink("fulton-ranch") },
+  { name: "Sun Lakes", href: getCanonicalNeighborhoodLink("sun-lakes") },
+  { name: "Downtown Chandler", href: getCanonicalNeighborhoodLink("downtown-chandler") },
+  { name: "Cooper Commons", href: getCanonicalNeighborhoodLink("cooper-commons") },
+  { name: "Dobson Ranch", href: "/bathroom-remodeling-dobson-ranch/" },
+  { name: "Ahwatukee", href: "/bathroom-remodeling-ahwatukee-az/" },
+  { name: "Chandler Heights", href: getCanonicalNeighborhoodLink("chandler-heights") },
+  { name: "Andersen Springs", href: getCanonicalNeighborhoodLink("andersen-springs") },
+  { name: "Layton Lakes", href: getCanonicalNeighborhoodLink("layton-lakes") },
+  { name: "The Islands", href: getCanonicalNeighborhoodLink("the-islands") },
+  { name: "Pecos Ranch", href: getCanonicalNeighborhoodLink("pecos-ranch") },
+];
+
+export default function ServiceAreas() {
+  return (
+    <section className="py-12 lg:py-20 bg-secondary" id="service-areas">
+      <div className="w-full max-w-[1400px] mx-auto px-8 lg:px-12">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12">
+          <div>
+            <span className="text-primary text-sm font-medium tracking-wider uppercase">Service Areas</span>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
+              Chandler, Ocotillo, Fulton Ranch, Sun Lakes & the East Valley
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-6">
+              From our Chandler location, we proudly serve homeowners throughout the city and surrounding East Valley communities. Whether you're in <strong>Ocotillo</strong>, <strong>Fulton Ranch</strong>, <strong>Sun Lakes</strong>, <strong>Downtown Chandler</strong>, <strong>Andersen Springs</strong>, <strong>Warner Ranch</strong>, <strong>The Islands</strong>, <strong>Pecos Ranch</strong>, or nearby neighbourhoods, we're here to help.
+            </p>
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+              Our service area also extends to nearby communities including <strong>Gilbert</strong>, <strong>Mesa</strong>, <strong>Tempe</strong>, <strong>Queen Creek</strong>, and <strong>South Phoenix</strong>. Convenient access via <strong>Loop 101</strong>, <strong>Loop 202</strong>, <strong>Arizona Avenue</strong>, <strong>Alma School Road</strong>, <strong>Ray Road</strong>, <strong>McQueen Road</strong>, and <strong>Kyrene Road</strong> allows us to reach homeowners across the East Valley efficiently.
+            </p>
+          </div>
+
+          <div className="h-full min-h-[300px]">
+            <InteractiveMap
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3334.6838369776056!2d-111.9605964!3d33.3009334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0403f517282b%3A0x64f0a47ba733e83e!2s6710%20W%20Chicago%20St%2C%20Chandler%2C%20AZ%2085226%2C%20USA!5e0!3m2!1sen!2s!4v1777130880103!5m2!1sen!2s"
+              title="ARZ Home Remodeling bathroom specialist location in Chandler Arizona"
+              height={445}
+            />
+          </div>
+        </div>
+
+        {/* 18 items in 6 columns (3 rows on desktop) */}
+        <div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {areas.map((area) => (
+              <Link
+                key={area.name}
+                href={area.href}
+                className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-primary transition-colors no-underline group"
+              >
+                <MapPin className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
+                <span className="text-foreground text-sm font-medium">{area.name}</span>
+              </Link>
+            ))}
+          </div>
+
+          <p className="text-sm text-muted-foreground mt-8 text-center sm:text-left">
+            Chandler ZIP hubs:{" "}
+            {["85224", "85225", "85226", "85244", "85246", "85248", "85249", "85286"].map((zip, i) => (
+              <span key={zip}>
+                {i > 0 ? " · " : ""}
+                <Link href={`/chandler-az-${zip}/`} className="text-primary hover:underline">
+                  {zip}
+                </Link>
+              </span>
+            ))}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

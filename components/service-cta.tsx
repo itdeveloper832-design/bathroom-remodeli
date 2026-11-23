@@ -1,0 +1,56 @@
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
+
+interface ServiceCTAProps {
+  title?: string;
+  description?: string;
+}
+
+export default function ServiceCTA({
+  title = "Ready to Transform Your Bathroom?",
+  description = "Get your free consultation today and discover how we can create the bathroom of your dreams.",
+}: ServiceCTAProps) {
+  return (
+    <section className="py-20 lg:py-32 bg-primary">
+      <div className="w-full max-w-[1400px] mx-auto px-8 lg:px-12">
+        <div className="max-w-4xl mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-primary-foreground">
+            {title}
+          </h2>
+          <p className="text-primary-foreground text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+            {description}
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="bg-background text-foreground hover:bg-background/90 min-w-[180px]"
+              aria-label="Call our bathroom renovation experts now"
+            >
+              <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
+                <Phone className="w-5 h-5" aria-hidden="true" />
+                Call Now
+              </a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="bg-background text-foreground border-primary-foreground hover:bg-background hover:text-primary min-w-[180px]"
+              aria-label="Speak to a Project Supervisor"
+            >
+              <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
+                <Phone className="w-5 h-5" aria-hidden="true" />
+                Speak to a Project Supervisor
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

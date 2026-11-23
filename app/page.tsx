@@ -1,0 +1,64 @@
+import type { Metadata } from "next";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import Hero from "@/components/home/hero";
+import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, WebSiteSchema } from "@/components/seo/json-ld";
+import { siteConfig } from "@/lib/site-config";
+import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
+
+import BelowFoldLoader from "@/components/home/below-fold-loader";
+import BlogPreview from "@/components/home/blog-preview";
+
+export const metadata: Metadata = {
+  title: "Bathroom Remodeling in Chandler, AZ | Custom Showers & Tile",
+  description: "Upgrade your bathroom with custom remodeling, shower renovations, tile installation, and vanity solutions in Chandler, AZ. Call now for a free consultation.",
+  keywords: [
+    "bathroom remodeling in chandler, AZ",
+    "bathroom remodeling chandler",
+    "bathroom remodel chandler az",
+    "bathroom remodeling specialist chandler"
+  ],
+  openGraph: {
+    title: "Bathroom Remodeling in Chandler, AZ | Custom Showers & Tile",
+    description: "Upgrade your bathroom with custom remodeling, shower renovations, tile installation, and vanity solutions in Chandler, AZ. Call now for a free consultation.",
+    type: "website",
+    url: `${siteConfig.url}/`,
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-homepage.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - Custom Bathroom Remodeling in Chandler, AZ",
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/`,
+  },
+  other: {
+    "og:type": "business.business",
+  },
+};
+
+const faqSchemaItems = homeFaqs.map((f) => ({
+  question: f.question,
+  answer: faqAnswerPlain(f.answer),
+}));
+
+export default function HomePage() {
+  return (
+    <>
+        <WebSiteSchema />
+        <FAQSchema faqs={faqSchemaItems} />
+        <SpeakableSchema url={`${siteConfig.url}/`} />
+      <Header />
+      <main id="main-content" role="main">
+        <Hero />
+        <BelowFoldLoader />
+      </main>
+      <Footer />
+    </>
+  );
+}
