@@ -46,10 +46,5 @@
       "dest": "/robots.txt"
     }
   ],
-  "functions": {
-    "app/**/*.{js,ts,tsx}": {
-      "maxDuration": 30
-    }
-  },
   "crons": []
 }
