@@ -1,13 +1,10 @@
-const crypto = require('crypto');
-const isExport = process.env.NEXT_OUTPUT?.trim() === 'export' || true; // Default to export for cPanel
-console.log('Next.js Build Mode:', isExport ? 'export' : 'standalone');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Output configuration - Force export for cPanel static hosting
-  output: 'export',
+  // Vercel server output (default): API routes and redirects work.
+  // Pages stay static (SSG) so Vercel free-tier function usage stays near zero.
+  // (Previously forced static export for cPanel FTP hosting.)
 
-  // Trailing slash ensures static export URLs match canonical tags
+  // Trailing slash keeps URLs matching canonical tags
   trailingSlash: true,
 
   // Redirects for legacy/duplicate pages + SEO canonical consolidation
@@ -117,12 +114,8 @@ const nextConfig = {
     tsconfigPath: './tsconfig.json',
   },
 
-  // Turbopack configuration for Next.js 16
-  turbopack: {
-    resolveAlias: {
-      '@': './src',
-    },
-  },
+  // NOTE: the '@/*' alias is defined in tsconfig.json (maps to project root).
+  // Do NOT add a Turbopack resolveAlias here — there is no ./src directory.
 
   // Webpack optimizations - deactivated to let Next.js native chunking engine optimize page loads
   webpack(config) {
