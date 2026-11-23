@@ -11,6 +11,7 @@ const inter = Inter({
 
 import { StickyCallButton } from '@/components/layout/sticky-call-button'
 import { PhoneTracker } from '@/components/analytics/phone-tracker'
+import { Analytics } from '@vercel/analytics/react'
 import { LocalBusinessSchema, OrganizationSchema } from '@/components/seo/json-ld'
 
 export const metadata: Metadata = {
@@ -178,6 +179,7 @@ export default function RootLayout({
         {children}
         <StickyCallButton />
         <PhoneTracker />
+        <Analytics />
       </body>
     </html>
   )
