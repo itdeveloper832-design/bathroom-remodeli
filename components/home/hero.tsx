@@ -41,10 +41,10 @@ export default function Hero() {
               asChild
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground text-base sm:text-lg px-6 py-5 sm:px-8 sm:py-6 font-bold rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 hero-btn-primary"
-              aria-label="Call now"
+              aria-label={`Call ${siteConfig.phone}`}
             >
               <a href={`tel:${siteConfig.phoneClean}`}>
-                Call Now
+                Call {siteConfig.phone}
               </a>
             </Button>
             <Link 
