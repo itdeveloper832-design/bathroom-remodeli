@@ -175,7 +175,7 @@ export default function TubToShowerConversionCostPage() {
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <Info className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                We provide <strong className="text-foreground">free, itemized written quotes</strong> with zero hidden fees. Call us at <a href="tel:+15205693339" className="text-primary hover:underline font-medium">(520) 569-3339</a> to speak with a specialist today.
+                We provide <strong className="text-foreground">free, itemized written quotes</strong> with zero hidden fees. Call us at <a href="tel:+16626538071" className="text-primary hover:underline font-medium">(662) 653-8071</a> to speak with a specialist today.
               </p>
             </div>
           </div>
@@ -305,8 +305,8 @@ export default function TubToShowerConversionCostPage() {
             </div>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Not sure which one fits? Call{" "}
-              <a href="tel:+15205693339" className="text-primary hover:underline font-medium">
-                (520) 569-3339
+              <a href="tel:+16626538071" className="text-primary hover:underline font-medium">
+                (662) 653-8071
               </a>{" "}
               — we give you a ballpark on the call, then a free in-home evaluation within 48 hours
               and a fixed, itemized written quote. The quote lists the drain upgrade, waterproofing,
@@ -315,10 +315,10 @@ export default function TubToShowerConversionCostPage() {
             </p>
             <div className="text-center">
               <a
-                href="tel:+15205693339"
+                href="tel:+16626538071"
                 className="inline-block bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition font-medium"
               >
-                Call (520) 569-3339 for Your Free Estimate
+                Call (662) 653-8071 for Your Free Estimate
               </a>
             </div>
           </div>

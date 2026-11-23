@@ -280,7 +280,7 @@ export default function StandaloneBlogPost() {
 
                     <blockquote>
                       <p>
-                        <strong>Need a quick estimate for your Chandler home?</strong> Contact our team and our team of expert local remodelers today at <strong>(520) 569-3339</strong> to schedule your free, detailed in-home estimate.
+                        <strong>Need a quick estimate for your Chandler home?</strong> Contact our team and our team of expert local remodelers today at <strong>(662) 653-8071</strong> to schedule your free, detailed in-home estimate.
                       </p>
                     </blockquote>
 
@@ -405,7 +405,7 @@ export default function StandaloneBlogPost() {
                       Are you ready to replace your outdated tub with a beautiful, modern walk-in shower? At ARZ Home Remodeling, we specialize in high-end bathroom conversions, custom tiling, and layout transformations across Chandler, Ocotillo, Fulton Ranch, and Sun Lakes.
                     </p>
                     <p>
-                      Contact our team and our team of expert local remodelers today at <strong>(520) 569-3339</strong> to discuss your ideas and schedule your free, itemized project estimate.
+                      Contact our team and our team of expert local remodelers today at <strong>(662) 653-8071</strong> to discuss your ideas and schedule your free, itemized project estimate.
                     </p>
                     
                     <div className="flex flex-col sm:flex-row gap-4 mt-8">

@@ -222,8 +222,8 @@ export default function WarrantyPage() {
                 <h3 className="mb-4 font-serif text-xl font-semibold">Need project-specific information?</h3>
                 <p className="mb-6 text-sm leading-relaxed text-slate-300">Ask ARZ for the written terms that apply to your bathroom-remodeling project before relying on a general webpage.</p>
                 <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-                  <a href="tel:+15205693339" className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/90">
-                    <Phone className="h-4 w-4" /> (520) 569-3339
+                  <a href="tel:+16626538071" className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/90">
+                    <Phone className="h-4 w-4" /> (662) 653-8071
                   </a>
                   <a href="/contact/" className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-5 py-3 font-semibold text-white transition-colors hover:bg-white/10">
                     Contact ARZ <ArrowRight className="h-4 w-4" />

@@ -52,7 +52,7 @@ const scottsdaleFaqs = [
   {
     question: "Do you work in North Scottsdale and DC Ranch?",
     answer:
-      "Yes. We serve Scottsdale across 85250, 85251, 85255, 85258, and 85260, including Old Town, Gainey Ranch, McCormick Ranch, DC Ranch, and North Scottsdale. Call (520) 569-3339 to confirm your neighborhood and book a free on-site evaluation."
+      "Yes. We serve Scottsdale across 85250, 85251, 85255, 85258, and 85260, including Old Town, Gainey Ranch, McCormick Ranch, DC Ranch, and North Scottsdale. Call (662) 653-8071 to confirm your neighborhood and book a free on-site evaluation."
   },
   {
     question: "How long does a Scottsdale master bathroom remodel take?",

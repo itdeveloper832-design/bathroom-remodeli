@@ -105,7 +105,7 @@ export default function ShowerGallery() {
             Ready to start your shower remodeling project?
           </p>
           <a
-            href={`tel:(520) 569-3339`}
+            href={`tel:(662) 653-8071`}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
           >
             Call for Your Free Estimate

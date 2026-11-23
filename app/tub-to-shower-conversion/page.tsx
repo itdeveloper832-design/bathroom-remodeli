@@ -251,7 +251,7 @@ export default function TubToShowerConversionPage() {
                 <Button asChild size="default" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
                   <a href={`tel:${siteConfig.phoneClean}`}>
                     <Phone className="w-4 h-4 mr-2" />
-                    Call (520) 569-3339
+                    Call (662) 653-8071
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="default" className="border-border hover:bg-secondary">
@@ -1234,7 +1234,7 @@ export default function TubToShowerConversionPage() {
                 <Button asChild variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-bold">
                   <a href={`tel:${siteConfig.phoneClean}`}>
                     <Phone className="w-5 h-5 mr-2" />
-                    Call (520) 569-3339
+                    Call (662) 653-8071
                   </a>
                 </Button>
               </div>

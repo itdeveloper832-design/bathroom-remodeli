@@ -9,8 +9,8 @@ export const siteConfig = {
   warranty: "",
   url: "https://arzhomeremodeling.com",
   googleBusinessLink: "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ",
-  phone: "(520) 569-3339",
-  phoneClean: "+15205693339",
+  phone: "(662) 653-8071",
+  phoneClean: "+16626538071",
   email: "sales@arzhomeremodeling.com",
   license: "",
   address: {

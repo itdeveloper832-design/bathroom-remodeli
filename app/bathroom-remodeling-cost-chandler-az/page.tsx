@@ -62,7 +62,7 @@ const faqs = [
   {
     question: "How long does it take to get an estimate?",
     answer:
-      "We schedule a free in-home evaluation within 48 hours of your call. After the visit you receive a fixed, itemized written quote — the price you see is the price you pay, backed by our 2-year workmanship warranty. Call (520) 569-3339 to book your visit.",
+      "We schedule a free in-home evaluation within 48 hours of your call. After the visit you receive a fixed, itemized written quote — the price you see is the price you pay, backed by our 2-year workmanship warranty. Call (662) 653-8071 to book your visit.",
   },
   {
     question: "Is the free estimate really free?",
@@ -344,8 +344,8 @@ export default function CostPage() {
                 <p className="font-semibold text-foreground mb-1">Call us</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Call{" "}
-                  <a href="tel:+15205693339" className="text-primary hover:underline font-medium">
-                    (520) 569-3339
+                  <a href="tel:+16626538071" className="text-primary hover:underline font-medium">
+                    (662) 653-8071
                   </a>{" "}
                   and describe your bathroom. We give you a ballpark on the call and book your free
                   visit.
@@ -370,10 +370,10 @@ export default function CostPage() {
             </div>
             <div className="text-center">
               <a
-                href="tel:+15205693339"
+                href="tel:+16626538071"
                 className="inline-block bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition font-medium"
               >
-                Call (520) 569-3339 for Your Free Estimate
+                Call (662) 653-8071 for Your Free Estimate
               </a>
             </div>
           </div>

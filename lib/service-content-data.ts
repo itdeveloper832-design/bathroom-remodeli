@@ -69,7 +69,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How long does a full bathroom remodel take in Chandler?",
         answer:
-          "A complete master bath remodel or custom walk-in shower conversion typically takes 4 to 6 weeks. We provide a detailed design-build timeline and a locked-in fixed-price contract for your Chandler home, handling everything from demo to custom cabinetry. Contact our team and our team at (520) 569-3339 to get started.",
+          "A complete master bath remodel or custom walk-in shower conversion typically takes 4 to 6 weeks. We provide a detailed design-build timeline and a locked-in fixed-price contract for your Chandler home, handling everything from demo to custom cabinetry. Contact our team and our team at (662) 653-8071 to get started.",
       },
       {
         question: "What's included in your bathroom remodeling services in Chandler?",
@@ -84,7 +84,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "What is the typical bathroom remodel chandler az cost?",
         answer:
-          "Bathroom remodeling costs vary based on design layout, footprint expansions, and material selections. Standard guest bathroom refreshes represent a standard scope, while custom master suite transformations with tiled walk-in showers represent a customized scope. We offer free on-site consultations to prepare detailed, line-item written estimates. Call us at (520) 569-3339 to schedule.",
+          "Bathroom remodeling costs vary based on design layout, footprint expansions, and material selections. Standard guest bathroom refreshes represent a standard scope, while custom master suite transformations with tiled walk-in showers represent a customized scope. We offer free on-site consultations to prepare detailed, line-item written estimates. Call us at (662) 653-8071 to schedule.",
       },
       {
         question: "Why should Chandler homeowners choose your design-build services?",
@@ -145,7 +145,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "What's the difference between walk-in and enclosure showers?",
         answer:
-          "Walk-in showers have an open design with no door, while enclosure showers use glass to contain water. If you're looking for accessible shower remodeling in Chandler, a walk-in design is often the best choice for safety and style. Call Us at (520) 569-3339 for a free design consultation.",
+          "Walk-in showers have an open design with no door, while enclosure showers use glass to contain water. If you're looking for accessible shower remodeling in Chandler, a walk-in design is often the best choice for safety and style. Call Us at (662) 653-8071 for a free design consultation.",
       },
       {
         question: "How long does a shower remodel near me typically take?",
@@ -221,7 +221,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "What is the average small bathroom remodel cost in Chandler?",
         answer:
-          "The average small bathroom remodel cost in Chandler is customized to your project scope, covering options from a cosmetic upgrade (new floating vanity, quartz vanity top, waterproof flooring) to a complete compact bathroom renovation. We provide a written, fixed-price quote after our in-home consultation. Call Us at (520) 569-3339.",
+          "The average small bathroom remodel cost in Chandler is customized to your project scope, covering options from a cosmetic upgrade (new floating vanity, quartz vanity top, waterproof flooring) to a complete compact bathroom renovation. We provide a written, fixed-price quote after our in-home consultation. Call Us at (662) 653-8071.",
       },
       {
         question: "What is the minimum size bathroom you can remodel?",
@@ -303,7 +303,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "Why should I choose epoxy grout instead of standard cement grout?",
         answer:
-          "Standard cement grout is highly porous and easily absorbs moisture, mold spores, and minerals from Chandler hard water. Epoxy grout is made from durable resins, making it completely non porous. It resists mold growth, prevents staining, and never needs to be sealed. Call Us at (520) 569-3339 to get an epoxy grout quote.",
+          "Standard cement grout is highly porous and easily absorbs moisture, mold spores, and minerals from Chandler hard water. Epoxy grout is made from durable resins, making it completely non porous. It resists mold growth, prevents staining, and never needs to be sealed. Call Us at (662) 653-8071 to get an epoxy grout quote.",
       },
       {
         question: "Can you repair cracked tiles without replacing everything?",
@@ -369,7 +369,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "Can you convert a single sink bathroom vanity into a double sink vanity?",
         answer:
-          "Yes, we can convert a single sink vanity into a double vanity if the space is at least sixty inches wide. The process involves opening the drywall behind the vanity to split the single cold and hot water lines and running two separate waste pipes to support the double sinks. Call Us at (520) 569-3339 for an estimate.",
+          "Yes, we can convert a single sink vanity into a double vanity if the space is at least sixty inches wide. The process involves opening the drywall behind the vanity to split the single cold and hot water lines and running two separate waste pipes to support the double sinks. Call Us at (662) 653-8071 for an estimate.",
       },
       {
         question: "How long does it take to install a new bathroom vanity?",
@@ -521,7 +521,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "Can you replace a shower valve without tearing down the wall?",
         answer:
-          "Yes, in many cases we can replace a shower valve cartridge or valve body through a small access panel behind the shower wall. If no access panel exists, we can carefully cut a neat opening in the adjoining room to replace the valve without disturbing your beautiful shower tile. Contact our team at (520) 569-3339.",
+          "Yes, in many cases we can replace a shower valve cartridge or valve body through a small access panel behind the shower wall. If no access panel exists, we can carefully cut a neat opening in the adjoining room to replace the valve without disturbing your beautiful shower tile. Contact our team at (662) 653-8071.",
       },
       {
         question: "What are the signs that a shower pan needs to be replaced?",
@@ -589,7 +589,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How long does it take to convert a tub to a walk in shower?",
         answer:
-          "A tub to shower conversion takes between 3 and 5 days of active work. Day 1 is demolition of the old tub. Day 2 is plumbing valve updates and drain line expansion from 1.5 inches to 2 inches. Day 3 is waterproofing and laying the shower pan. Day 4 is tile setting and grouting. Day 5 is mounting the shower doors and final walkthrough. Call Us at (520) 569-3339 to book your conversion.",
+          "A tub to shower conversion takes between 3 and 5 days of active work. Day 1 is demolition of the old tub. Day 2 is plumbing valve updates and drain line expansion from 1.5 inches to 2 inches. Day 3 is waterproofing and laying the shower pan. Day 4 is tile setting and grouting. Day 5 is mounting the shower doors and final walkthrough. Call Us at (662) 653-8071 to book your conversion.",
       },
       {
         question: "Why is a 2 inch drain line required for a shower in Chandler?",
@@ -670,7 +670,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How long does a walk-in shower installation take in Chandler?",
         answer:
-          "A standard walk-in shower installation typically takes seven to ten days of active construction under . This includes demolition of your old enclosure, custom pan forming, multi layer waterproofing, tile setting, and final glass installation. Call Us at (520) 569-3339 to book.",
+          "A standard walk-in shower installation typically takes seven to ten days of active construction under . This includes demolition of your old enclosure, custom pan forming, multi layer waterproofing, tile setting, and final glass installation. Call Us at (662) 653-8071 to book.",
       },
     ],
   },
@@ -730,7 +730,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How long does it take to install new vanities and countertops?",
         answer:
-          "A standard bathroom cabinet and countertop installation typically takes five to seven days of active construction. This timeframe includes removing your old vanity, preparing the plumbing lines, anchoring the new cabinets, setting the fabricated stone, and installing the sink drains. Call Us at (520) 569-3339.",
+          "A standard bathroom cabinet and countertop installation typically takes five to seven days of active construction. This timeframe includes removing your old vanity, preparing the plumbing lines, anchoring the new cabinets, setting the fabricated stone, and installing the sink drains. Call Us at (662) 653-8071.",
       },
       {
         question: "Do you offer cabinet refacing or only full replacement?",
@@ -806,7 +806,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How long does it take to install new bathroom floor tile?",
         answer:
-          "A standard bathroom floor tile installation typically takes three to five days of active construction under . This timeframe includes removing your old flooring, leveling the concrete slab, installing crack isolation membranes, setting the tile, and applying the epoxy grout. Call Us at (520) 569-3339.",
+          "A standard bathroom floor tile installation typically takes three to five days of active construction under . This timeframe includes removing your old flooring, leveling the concrete slab, installing crack isolation membranes, setting the tile, and applying the epoxy grout. Call Us at (662) 653-8071.",
       },
       {
         question: "Why do my bathroom floor tile grout lines crack and crumble?",
