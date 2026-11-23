@@ -812,7 +812,7 @@ export default function ApacheJunctionPage() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-5 pt-6 border-t border-border">
-              <Link href="/walk-in-showers/" className="text-primary font-semibold hover:underline text-sm">
+              <Link href="/shower-remodeling/" className="text-primary font-semibold hover:underline text-sm">
                 Walk-In Showers →
               </Link>
               <Link href="/tub-to-shower-conversion/" className="text-primary font-semibold hover:underline text-sm">

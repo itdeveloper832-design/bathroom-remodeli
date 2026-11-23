@@ -83,6 +83,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/shower-replacement/",
     "/shower-bathtub-upgrade/",
     "/tub-removal/",
+    "/bathroom-remodeling-financing/",
   ];
 
   allEntries.forEach((entry) => {

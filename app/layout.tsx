@@ -16,7 +16,7 @@ import { LocalBusinessSchema, OrganizationSchema } from '@/components/seo/json-l
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),title: {
-    absolute: "expert bath remodelers | Chandler AZ Bathroom Remodeling"
+    absolute: "ARZ Home Remodeling | Bathroom Remodeling in Chandler, AZ"
   },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore expert bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: siteConfig.url,
-    siteName: siteConfig.name,title: "expert bath remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore expert bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
+    siteName: siteConfig.name,title: "ARZ Home Remodeling | Bathroom Remodeling in Chandler, AZ",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore expert bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [
       {
         url: `${siteConfig.url}/images/og-homepage.png`,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary_large_image',title: "expert bath remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore expert bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
+    card: 'summary_large_image',title: "ARZ Home Remodeling | Bathroom Remodeling in Chandler, AZ",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore expert bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-homepage.png`],
   },
   verification: {

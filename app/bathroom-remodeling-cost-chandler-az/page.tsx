@@ -59,6 +59,16 @@ const faqs = [
     answer:
       "Yes. We offer financing options and custom monthly payment plans for qualified homeowners. This helps keep your bathroom upgrades affordable while ensuring the job is done by professional professionals. Contact us today to discuss financing options.",
   },
+  {
+    question: "How long does it take to get an estimate?",
+    answer:
+      "We schedule a free in-home evaluation within 48 hours of your call. After the visit you receive a fixed, itemized written quote — the price you see is the price you pay, backed by our 2-year workmanship warranty. Call (520) 569-3339 to book your visit.",
+  },
+  {
+    question: "Is the free estimate really free?",
+    answer:
+      "Yes. The in-home evaluation and the written, line-item quote cost nothing and carry no obligation. If you decide not to proceed, you keep the quote. There is no fee for the visit or for the estimate itself.",
+  },
 ];
 
 const pricingData = [
@@ -173,8 +183,8 @@ export default function CostPage() {
       <Header />
       <main>
         <ServiceHero
-          title="How Much Does a Bathroom Remodel Cost in Chandler, AZ? (2025 Pricing Guide)"
-          subtitle="Transparent 2025 Pricing"
+          title="How Much Does a Bathroom Remodel Cost in Chandler, AZ? (2026 Pricing Guide)"
+          subtitle="Transparent 2026 Pricing"
           description="Straight answers on what bathroom remodeling costs in Chandler. Every tier broken down by line item - no guessing, no surprises."
           image="/images/hero/luxury-shower-remodel-chandler.avif"
           breadcrumbs={[
@@ -192,7 +202,7 @@ export default function CostPage() {
               <em>\"What will this actually cost?\"</em> The answer depends on your project type, material grade, and whether
               any plumbing is being relocated. This guide breaks down every tier with real line-item estimates so you can plan
               accurately. To see an extensive breakdown, read our comprehensive{" "}
-              <Link href="/blog/bathroom-remodel-cost-chandler-az-2025/" className="text-primary hover:underline font-medium">
+              <Link href="/blog/bathroom-remodel-cost-chandler-az-2026/" className="text-primary hover:underline font-medium">
                 2026 Chandler bathroom remodel cost guide
               </Link>. Whether you&apos;re looking for <strong>cheap bathroom remodeling in Chandler AZ</strong> that doesn&apos;t sacrifice quality, 
               or a high-end master suite renovation, we provide options for every budget.
@@ -312,6 +322,59 @@ export default function CostPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* GET YOUR EXACT NUMBER */}
+        <section className="py-16 lg:py-24 bg-secondary">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4 text-foreground">
+              How to Get Your Exact Number
+            </h2>
+            <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+              Our 2026 guide puts a basic guest-bath update at roughly $5,000 and a larger custom
+              renovation at $55,000 or more. Most Chandler projects fall between those two points,
+              depending on scope, materials, and whether plumbing moves. The only way to get a real
+              number for your bathroom is a free in-home evaluation — here is how it works.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4 mb-8">
+              <div className="bg-background border border-border rounded-xl p-6">
+                <p className="font-serif text-2xl font-semibold text-primary mb-2">1</p>
+                <p className="font-semibold text-foreground mb-1">Call us</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Call{" "}
+                  <a href="tel:+15205693339" className="text-primary hover:underline font-medium">
+                    (520) 569-3339
+                  </a>{" "}
+                  and describe your bathroom. We give you a ballpark on the call and book your free
+                  visit.
+                </p>
+              </div>
+              <div className="bg-background border border-border rounded-xl p-6">
+                <p className="font-serif text-2xl font-semibold text-primary mb-2">2</p>
+                <p className="font-semibold text-foreground mb-1">Free in-home evaluation</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We visit within 48 hours, measure your space, check plumbing and sub-floor
+                  condition, and discuss materials and finishes with you.
+                </p>
+              </div>
+              <div className="bg-background border border-border rounded-xl p-6">
+                <p className="font-serif text-2xl font-semibold text-primary mb-2">3</p>
+                <p className="font-semibold text-foreground mb-1">Fixed written quote</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  You receive a fixed, itemized written quote with zero hidden fees, backed by our
+                  2-year workmanship warranty. The price you see is the price you pay.
+                </p>
+              </div>
+            </div>
+            <div className="text-center">
+              <a
+                href="tel:+15205693339"
+                className="inline-block bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition font-medium"
+              >
+                Call (520) 569-3339 for Your Free Estimate
+              </a>
             </div>
           </div>
         </section>

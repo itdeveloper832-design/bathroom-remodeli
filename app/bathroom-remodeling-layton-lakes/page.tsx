@@ -22,8 +22,6 @@ import {
   Phone,
   Check,
   Layers,
-  UtensilsCrossed,
-  Home,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
@@ -664,53 +662,6 @@ export default function LaytonLakesBathroomRemodelingPage() {
               <Link href="/shower-remodeling/" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline text-lg">
                 Learn More About Shower Waterproofing →
               </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION 13: KITCHEN & HOME REMODELING */}
-        <section className="py-16 lg:py-24 bg-background">
-          <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
-            <div className="text-center mb-12">
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Additional Services</span>
-              <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-4 text-foreground">
-                Other Remodeling Services in Layton Lakes
-              </h2>
-              <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
-                Bathroom remodeling is one part of the services available to homeowners in Layton Lakes.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-secondary p-8 rounded-2xl border border-border flex flex-col justify-between">
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
-                    <UtensilsCrossed className="w-6 h-6" />
-                  </div>
-                  <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Kitchen Remodeling</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                    Kitchen renovations can include cabinets, countertops, backsplashes, islands, lighting, storage, flooring, and other improvements.
-                  </p>
-                </div>
-                <Link href="/kitchen-remodeling-chandler-az/" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
-                  Explore Kitchen Remodeling →
-                </Link>
-              </div>
-
-              <div className="bg-secondary p-8 rounded-2xl border border-border flex flex-col justify-between">
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
-                    <Home className="w-6 h-6" />
-                  </div>
-                  <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Home Renovation</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                    Home renovation projects can address multiple interior spaces and may include flooring, room updates, storage improvements, and other interior improvements.
-                  </p>
-                </div>
-                <Link href="/home-renovation-chandler-az/" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
-                  Explore Home Renovation →
-                </Link>
-              </div>
             </div>
           </div>
         </section>

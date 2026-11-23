@@ -21,8 +21,6 @@ import {
   ArrowRight,
   Phone,
   Check,
-  Home,
-  UtensilsCrossed,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
@@ -475,53 +473,6 @@ export default function MesaBathroomRemodelingPage() {
             <p className="text-muted-foreground text-lg leading-relaxed text-center">
               The exact materials and construction method are selected according to the project&apos;s design, substrate, and installation requirements.
             </p>
-          </div>
-        </section>
-
-        {/* SECTION 8: KITCHEN & HOME REMODELING */}
-        <section className="py-16 lg:py-24 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
-            <div className="text-center mb-12">
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Beyond Bathrooms</span>
-              <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-4 text-foreground">
-                Mesa Kitchen & Home Remodeling
-              </h2>
-              <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
-                Although bathroom renovations are a major part of our work, homeowners sometimes want to coordinate several interior improvements during the same project.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-background p-8 rounded-2xl border border-border flex flex-col justify-between shadow-sm">
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center gap-2 justify-center mb-4 text-primary">
-                    <UtensilsCrossed className="w-6 h-6" />
-                  </div>
-                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">Kitchen Remodeling</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                    Upgrade an outdated kitchen with new cabinetry, countertops, backsplashes, lighting, storage, and other improvements designed around the existing space.
-                  </p>
-                </div>
-                <Link href="/kitchen-remodeling-chandler-az/" className="text-primary font-semibold hover:underline text-sm inline-flex items-center gap-1.5">
-                  Explore Kitchen Remodeling →
-                </Link>
-              </div>
-
-              <div className="bg-background p-8 rounded-2xl border border-border flex flex-col justify-between shadow-sm">
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center gap-2 justify-center mb-4 text-primary">
-                    <Home className="w-6 h-6" />
-                  </div>
-                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">Home Renovation</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                    For larger interior projects, we can coordinate improvements such as flooring, interior finishes, fireplace updates, storage improvements, and other remodeling work.
-                  </p>
-                </div>
-                <Link href="/home-renovation-chandler-az/" className="text-primary font-semibold hover:underline text-sm inline-flex items-center gap-1.5">
-                  Explore Whole Home Remodeling →
-                </Link>
-              </div>
-            </div>
           </div>
         </section>
 

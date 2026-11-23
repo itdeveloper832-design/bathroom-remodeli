@@ -51,7 +51,7 @@ const contactFaqs = [
   {
     question: "Can I ask about financing for a bathroom remodeling project?",
     answer: (
-      <>Yes. Financing questions can be discussed during the project conversation. Visit the <Link href="/bathroom-remodeling-financing/" className="text-primary underline underline-offset-4">bathroom remodeling financing</Link> page for the information currently provided by ARZ.</>
+      <>Yes. Financing questions can be discussed during the project conversation. Visit the <Link href="/financing/" className="text-primary underline underline-offset-4">bathroom remodeling financing</Link> page for the information currently provided by ARZ.</>
     ),
   },
   {

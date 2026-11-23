@@ -922,7 +922,7 @@ export default function QueenCreekBathroomRemodelingPage() {
 
             {/* Focused hierarchy internal links */}
             <div className="flex flex-wrap justify-center gap-5 pt-6 border-t border-border">
-              <Link href="/walk-in-showers/" className="text-primary font-semibold hover:underline text-sm">
+              <Link href="/shower-remodeling/" className="text-primary font-semibold hover:underline text-sm">
                 Shower Remodeling →
               </Link>
               <Link href="/tub-to-shower-conversion/" className="text-primary font-semibold hover:underline text-sm">

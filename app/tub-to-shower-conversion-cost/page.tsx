@@ -48,6 +48,16 @@ const conversionFaqs = [
     answer:
       "Yes. A plumbing and building permit is required by the City of Chandler because we modify the drain line, relocate water valves, and update wall framing. We coordinate all permits, paperwork, and city inspections as part of our comprehensive service."
   },
+  {
+    question: "What happens if you find water damage under the old tub?",
+    answer:
+      "Old tubs often hide slow leaks that rot wood joists or degrade concrete. We inspect the sub-floor during your free in-home evaluation, and any repair is listed as its own line item in your written quote before work starts — no surprise charges mid-project."
+  },
+  {
+    question: "Is a cast-iron tub harder to remove than an acrylic one?",
+    answer:
+      "Cast-iron tubs are heavier to demolish than acrylic ones, but removal is included in every conversion package. Your written estimate covers the demo either way, along with the drain upgrade, waterproofing, and tile work."
+  },
 ];
 
 const pricingData = [
@@ -256,6 +266,60 @@ export default function TubToShowerConversionCostPage() {
                   <p className="text-muted-foreground text-sm leading-relaxed">{f.detail}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* WHICH OPTION FITS */}
+        <section className="py-16 lg:py-24 bg-secondary">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4 text-foreground">
+              Which Option Fits Your Bathroom?
+            </h2>
+            <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+              The right package depends on how you use the shower and how long you plan to stay in
+              the home. Here is how most Chandler homeowners choose.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4 mb-8">
+              <div className="bg-background border border-border rounded-xl p-6">
+                <p className="font-semibold text-foreground mb-1">Standard package</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Best when you want a clean, modern shower quickly and plan to keep the home a few
+                  more years. Acrylic base, ceramic tile walls, and a semi-frameless sliding door.
+                </p>
+              </div>
+              <div className="bg-background border border-border rounded-xl p-6">
+                <p className="font-semibold text-foreground mb-1">Custom tiled conversion</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Our most popular option. A full custom tile shower with Schluter waterproofing and
+                  frameless glass — the best balance of durability, looks, and resale value.
+                </p>
+              </div>
+              <div className="bg-background border border-border rounded-xl p-6">
+                <p className="font-semibold text-foreground mb-1">Luxury barrier-free</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Best for accessibility and forever homes. A curbless walk-in shower with a linear
+                  drain, large-format tile, and nano-coated frameless glass. No step, no trip hazard.
+                </p>
+              </div>
+            </div>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Not sure which one fits? Call{" "}
+              <a href="tel:+15205693339" className="text-primary hover:underline font-medium">
+                (520) 569-3339
+              </a>{" "}
+              — we give you a ballpark on the call, then a free in-home evaluation within 48 hours
+              and a fixed, itemized written quote. The quote lists the drain upgrade, waterproofing,
+              tile, glass, and permits as separate line items, so you see exactly what you are
+              paying for.
+            </p>
+            <div className="text-center">
+              <a
+                href="tel:+15205693339"
+                className="inline-block bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition font-medium"
+              >
+                Call (520) 569-3339 for Your Free Estimate
+              </a>
             </div>
           </div>
         </section>
