@@ -114,8 +114,11 @@ const nextConfig = {
     tsconfigPath: './tsconfig.json',
   },
 
+  // Turbopack is Next.js 16's default bundler. An (empty) turbopack key is
+  // REQUIRED — without it, Next errors because a `webpack` key is present.
   // NOTE: the '@/*' alias is defined in tsconfig.json (maps to project root).
   // Do NOT add a Turbopack resolveAlias here — there is no ./src directory.
+  turbopack: {},
 
   // Webpack optimizations - deactivated to let Next.js native chunking engine optimize page loads
   webpack(config) {
