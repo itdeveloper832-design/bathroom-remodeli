@@ -1,1 +1,114 @@
-LyoqIEB0eXBlIHtpbXBvcnQoJ25leHQnKS5OZXh0Q29uZmlnfSAqLwpjb25zdCBuZXh0Q29uZmlnID0gewogIC8vIFNUQVRJQyBFWFBPUlQgKDIwMjYtMTEtMjMpOiB0aGUgc2l0ZSBoYXMgbm8gZGF0YWJhc2UtYmFja2VkIGNvbnRlbnQg4oCUCiAgLy8gZXZlcnkgcGFnZS9ibG9nIHBvc3QgaXMgc2VlZCBkYXRhIGJ1aWx0IGF0IGJ1aWxkIHRpbWUg4oCUIHNvIGFsbCBwYWdlcyBhcmUKICAvLyBwcmUtcmVuZGVyZWQgSFRNTC4gWmVybyBJU1IgcmVhZHMvd3JpdGVzLCB6ZXJvIHNlcnZlciBmdW5jdGlvbnMuCiAgLy8gUmVkaXJlY3RzIG1vdmVkIHRvIHZlcmNlbC5qc29uIChuZXh0LmNvbmZpZyByZWRpcmVjdHMgZG8gbm90IGFwcGx5IGluCiAgLy8gc3RhdGljIGV4cG9ydCkuIEFQSSByb3V0ZXMgKC9hcGkvc2VvLCAvYXBpL3VwbG9hZCkgcmVtb3ZlZCDigJQgdGhleSBhcmUKICAvLyBhZG1pbi1vbmx5IGFuZCBkaWQgbm90IHdvcmsgb24gVmVyY2VsIGFueXdheS4KCiAgb3V0cHV0OiAnZXhwb3J0JywKCiAgLy8gVHJhaWxpbmcgc2xhc2gga2VlcHMgVVJMcyBtYXRjaGluZyBjYW5vbmljYWwgdGFncwogIHRyYWlsaW5nU2xhc2g6IHRydWUsCgogIC8vIFNlY3VyaXR5ICYgQmVzdCBQcmFjdGljZXMKICBwb3dlcmVkQnlIZWFkZXI6IGZhbHNlLAogIHJlYWN0U3RyaWN0TW9kZTogdHJ1ZSwKCiAgLy8gSW1hZ2UgT3B0aW1pemF0aW9uIC0gU3RhdGljIGV4cG9ydCByZXF1aXJlcyB1bm9wdGltaXplZDogdHJ1ZQogIGltYWdlczogewogICAgdW5vcHRpbWl6ZWQ6IHRydWUsCiAgICBmb3JtYXRzOiBbJ2ltYWdlL2F2aWYnLCAnaW1hZ2Uvd2VicCddLAogICAgcmVtb3RlUGF0dGVybnM6IFsKICAgICAgewogICAgICAgIHByb3RvY29sOiAnaHR0cHMnLAogICAgICAgIGhvc3RuYW1lOiAnaW1hZ2VzLnVuc3BsYXNoLmNvbScsCiAgICAgICAgcGF0aG5hbWU6ICcvKionLAogICAgICB9LAogICAgICB7CiAgICAgICAgcHJvdG9jb2w6ICdodHRwcycsCiAgICAgICAgaG9zdG5hbWU6ICdoZWJia3gxYW5oaWxhNXlmLnB1YmxpYy5ibG9iLnZlcmNlbC1zdG9yYWdlLmNvbScsCiAgICAgICAgcGF0aG5hbWU6ICcvKionLAogICAgICB9LAogICAgXSwKICAgIGRldmljZVNpemVzOiBbMzkwLCA2NDAsIDgyOCwgMTA4MCwgMTIwMCwgMTkyMF0sCiAgICBpbWFnZVNpemVzOiBbMTYsIDMyLCA2NCwgOTYsIDEyOCwgMjU2XSwKICB9LAoKICAvLyBQZXJmb3JtYW5jZSBvcHRpbWl6YXRpb25zCiAgZXhwZXJpbWVudGFsOiB7CiAgICBvcHRpbWl6ZVBhY2thZ2VJbXBvcnRzOiBbCiAgICAgICdsdWNpZGUtcmVhY3QnLAogICAgICAnZGF0ZS1mbnMnLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LWFjY29yZGlvbicsCiAgICAgICdAcmFkaXgtdWkvcmVhY3QtYWxlcnQtZGlhbG9nJywKICAgICAgJ0ByYWRpeC11aS9yZWFjdC1hc3BlY3QtcmF0aW8nLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LWF2YXRhcicsCiAgICAgICdAcmFkaXgtdWkvcmVhY3QtY2hlY2tib3gnLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LWNvbGxhcHNpYmxlJywKICAgICAgJ0ByYWRpeC11aS9yZWFjdC1jb250ZXh0LW1lbnUnLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LWRpYWxvZycsCiAgICAgICdAcmFkaXgtdWkvcmVhY3QtZHJvcGRvd24tbWVudScsCiAgICAgICdAcmFkaXgtdWkvcmVhY3QtaG92ZXItY2FyZCcsCiAgICAgICdAcmFkaXgtdWkvcmVhY3QtbGFiZWwnLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LW1lbnViYXInLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LW5hdmlnYXRpb24tbWVudScsCiAgICAgICdAcmFkaXgtdWkvcmVhY3QtcG9wb3ZlcicsCiAgICAgICdAcmFkaXgtdWkvcmVhY3QtcHJvZ3Jlc3MnLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LXJhZGlvLWdyb3VwJywKICAgICAgJ0ByYWRpeC11aS9yZWFjdC1zY3JvbGwtYXJlYScsCiAgICAgICdAcmFkaXgtdWkvcmVhY3Qtc2VsZWN0JywKICAgICAgJ0ByYWRpeC11aS9yZWFjdC1zZXBhcmF0b3InLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LXNsaWRlcicsCiAgICAgICdAcmFkaXgtdWkvcmVhY3Qtc2xvdCcsCiAgICAgICdAcmFkaXgtdWkvcmVhY3Qtc3dpdGNoJywKICAgICAgJ0ByYWRpeC11aS9yZWFjdC10YWJzJywKICAgICAgJ0ByYWRpeC11aS9yZWFjdC10b2FzdCcsCiAgICAgICdAcmFkaXgtdWkvcmVhY3QtdG9nZ2xlJywKICAgICAgJ0ByYWRpeC11aS9yZWFjdC10b2dnbGUtZ3JvdXAnLAogICAgICAnQHJhZGl4LXVpL3JlYWN0LXRvb2x0aXAnLAogICAgXSwKICB9LAoKICAvLyBQcm9kdWN0aW9uIG9wdGltaXphdGlvbnMKICBwcm9kdWN0aW9uQnJvd3NlclNvdXJjZU1hcHM6IGZhbHNlLAogIGNvbXBpbGVyOiB7CiAgICByZW1vdmVDb25zb2xlOiBwcm9jZXNzLmVudi5OT0RFX0VOViA9PT0gJ3Byb2R1Y3Rpb24nID8geyBleGNsdWRlOiBbJ2Vycm9yJywgJ3dhcm4nXSB9IDogZmFsc2UsCiAgfSwKCiAgLy8gUGFnZSBleHRlbnNpb25zCiAgcGFnZUV4dGVuc2lvbnM6IFsndHMnLCAndHN4J10sCgogIC8vIFR5cGVTY3JpcHQKICB0eXBlc2NyaXB0OiB7CiAgICBpZ25vcmVCdWlsZEVycm9yczogdHJ1ZSwKICAgIHRzY29uZmlnUGF0aDogJy4vdHNjb25maWcuanNvbicsCiAgfSwKCiAgLy8gVHVyYm9wYWNrIGlzIE5leHQuanMgMTYncyBkZWZhdWx0IGJ1bmRsZXIuIEFuIChlbXB0eSkgdHVyYm9wYWNrIGtleSBpcwogIC8vIFJFUVVJUkVEIOKAlCB3aXRob3V0IGl0LCBOZXh0IGVycm9ycyBiZWNhdXNlIGEgYHdlYnBhY2tgIGtleSBpcyBwcmVzZW50LgogIC8vIE5PVEU6IHRoZSAnQC8qJyBhbGlhcyBpcyBkZWZpbmVkIGluIHRzY29uZmlnLmpzb24gKG1hcHMgdG8gcHJvamVjdCByb290KS4KICAvLyBEbyBOT1QgYWRkIGEgVHVyYm9wYWNrIHJlc29sdmVBbGlhcyBoZXJlIOKAlCB0aGVyZSBpcyBubyAuL3NyYyBkaXJlY3RvcnkuCiAgdHVyYm9wYWNrOiB7fSwKCiAgLy8gV2VicGFjayBvcHRpbWl6YXRpb25zIC0gZGVhY3RpdmF0ZWQgdG8gbGV0IE5leHQuanMgbmF0aXZlIGNodW5raW5nIGVuZ2luZSBvcHRpbWl6ZSBwYWdlIGxvYWRzCiAgd2VicGFjayhjb25maWcpIHsKICAgIHJldHVybiBjb25maWc7CiAgfSwKfTsKCmxldCBjb25maWcgPSBuZXh0Q29uZmlnOwoKaWYgKHByb2Nlc3MuZW52LkFOQUxZWkUgPT09ICd0cnVlJykgewogIHRyeSB7CiAgICBjb25zdCB3aXRoQnVuZGxlQW5hbHl6ZXIgPSByZXF1aXJlKCdAbmV4dC9idW5kbGUtYW5hbHl6ZXInKSh7CiAgICAgIGVuYWJsZWQ6IHRydWUsCiAgICB9KTsKICAgIGNvbmZpZyA9IHdpdGhCdW5kbGVBbmFseXplcihjb25maWcpOwogIH0gY2F0Y2ggKGVycikgewogICAgY29uc29sZS53YXJuKCdcbltXYXJuaW5nXSBQbGVhc2UgaW5zdGFsbCBAbmV4dC9idW5kbGUtYW5hbHl6ZXIgdG8gcnVuIGJ1bmRsZSBhbmFseXNpczpcbm5wbSBpbnN0YWxsIC1EIEBuZXh0L2J1bmRsZS1hbmFseXplclxuJyk7CiAgfQp9Cgptb2R1bGUuZXhwb3J0cyA9IGNvbmZpZzsK
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // STATIC EXPORT (2026-11-23): the site has no database-backed content —
+  // every page/blog post is seed data built at build time — so all pages are
+  // pre-rendered HTML. Zero ISR reads/writes, zero server functions.
+  // Redirects moved to vercel.json (next.config redirects do not apply in
+  // static export). API routes (/api/seo, /api/upload) removed — they are
+  // admin-only and did not work on Vercel anyway.
+
+  output: 'export',
+
+  // Trailing slash keeps URLs matching canonical tags
+  trailingSlash: true,
+
+  // Security & Best Practices
+  poweredByHeader: false,
+  reactStrictMode: true,
+
+  // Image Optimization - Static export requires unoptimized: true
+  images: {
+    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com',
+        pathname: '/**',
+      },
+    ],
+    deviceSizes: [390, 640, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 64, 96, 128, 256],
+  },
+
+  // Performance optimizations
+  experimental: {
+    optimizePackageImports: [
+      'lucide-react',
+      'date-fns',
+      '@radix-ui/react-accordion',
+      '@radix-ui/react-alert-dialog',
+      '@radix-ui/react-aspect-ratio',
+      '@radix-ui/react-avatar',
+      '@radix-ui/react-checkbox',
+      '@radix-ui/react-collapsible',
+      '@radix-ui/react-context-menu',
+      '@radix-ui/react-dialog',
+      '@radix-ui/react-dropdown-menu',
+      '@radix-ui/react-hover-card',
+      '@radix-ui/react-label',
+      '@radix-ui/react-menubar',
+      '@radix-ui/react-navigation-menu',
+      '@radix-ui/react-popover',
+      '@radix-ui/react-progress',
+      '@radix-ui/react-radio-group',
+      '@radix-ui/react-scroll-area',
+      '@radix-ui/react-select',
+      '@radix-ui/react-separator',
+      '@radix-ui/react-slider',
+      '@radix-ui/react-slot',
+      '@radix-ui/react-switch',
+      '@radix-ui/react-tabs',
+      '@radix-ui/react-toast',
+      '@radix-ui/react-toggle',
+      '@radix-ui/react-toggle-group',
+      '@radix-ui/react-tooltip',
+    ],
+  },
+
+  // Production optimizations
+  productionBrowserSourceMaps: false,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error', 'warn'] } : false,
+  },
+
+  // Page extensions
+  pageExtensions: ['ts', 'tsx'],
+
+  // TypeScript
+  typescript: {
+    ignoreBuildErrors: true,
+    tsconfigPath: './tsconfig.json',
+  },
+
+  // Turbopack is Next.js 16's default bundler. An (empty) turbopack key is
+  // REQUIRED — without it, Next errors because a `webpack` key is present.
+  // NOTE: the '@/*' alias is defined in tsconfig.json (maps to project root).
+  // Do NOT add a Turbopack resolveAlias here — there is no ./src directory.
+  turbopack: {},
+
+  // Webpack optimizations - deactivated to let Next.js native chunking engine optimize page loads
+  webpack(config) {
+    return config;
+  },
+};
+
+let config = nextConfig;
+
+if (process.env.ANALYZE === 'true') {
+  try {
+    const withBundleAnalyzer = require('@next/bundle-analyzer')({
+      enabled: true,
+    });
+    config = withBundleAnalyzer(config);
+  } catch (err) {
+    console.warn('\n[Warning] Please install @next/bundle-analyzer to run bundle analysis:\nnpm install -D @next/bundle-analyzer\n');
+  }
+}
+
+module.exports = config;
