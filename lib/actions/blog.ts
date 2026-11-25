@@ -1,1 +1,264 @@
-aW1wb3J0IHR5cGUgeyBCbG9nUG9zdCwgQ2F0ZWdvcnkgfSBmcm9tICJAL2xpYi90eXBlcyI7CmltcG9ydCB7IAogIHBvc3RfMSwKICBwb3N0XzIsCiAgcG9zdF8zLAogIHBvc3RfNCwKICBwb3N0XzUsCiAgcG9zdF82LAogIHBvc3RfNywKICBwb3N0XzgsCiAgcG9zdF85LAogIHBvc3RfMTAsCiAgcG9zdF8xMiwKICBwb3N0XzEzLAogIHBvc3RfMTQsCiAgcG9zdF8xNSwKICBwb3N0XzE2LAogIHBvc3RfMTksCiAgcG9zdF8yMCwKICBwb3N0XzIzLAogIHBvc3RfMjUsCiAgcG9zdF8yNiwKICBwb3N0XzI3LAogIHBvc3RfMjgsCiAgcG9zdF8yOSwKICBwb3N0XzMwLAogIHBvc3RfMzEsCiAgcG9zdF8zMiwKICBwb3N0XzMzLAogIHBvc3RfMzQsCiAgcG9zdF8zNSwKICBwb3N0XzM2LAogIHBvc3RfMzcsCiAgcG9zdF8zOCwKICBwb3N0XzM5LAogIHBvc3RfNDAsCiAgcG9zdF80MSwKICBwb3N0XzQyCn0gZnJvbSAiQC9saWIvc2VlZC1ibG9nIjsKaW1wb3J0IHsgc3VibWl0VG9JbmRleE5vdyB9IGZyb20gIkAvbGliL2luZGV4bm93IjsKCmZ1bmN0aW9uIGdlbmVyYXRlU2x1Zyh0aXRsZTogc3RyaW5nKTogc3RyaW5nIHsKICByZXR1cm4gdGl0bGUKICAgIC50b0xvd2VyQ2FzZSgpCiAgICAucmVwbGFjZSgvW15cd1xzLV0vZywgIiIpCiAgICAucmVwbGFjZSgvXHMrL2csICItIikKICAgIC5yZXBsYWNlKC8tKy9nLCAiLSIpCiAgICAudHJpbSgpOwp9CgpsZXQgYmxvZ092ZXJyaWRlczogUmVjb3JkPHN0cmluZywgeyB0aXRsZTogc3RyaW5nOyBkZXNjcmlwdGlvbjogc3RyaW5nIH0+ID0ge307CnRyeSB7CiAgYmxvZ092ZXJyaWRlcyA9IHJlcXVpcmUoIi4uL2Jsb2ctbWV0YWRhdGEtb3ZlcnJpZGVzLmpzb24iKTsKfSBjYXRjaCAoZSkgewogIC8vIFNhZmUgZmFsbGJhY2sKfQoKY29uc3QgYmFzZVBvc3RzOiBCbG9nUG9zdFtdID0gWwogIHBvc3RfMSwKICBwb3N0XzIsCiAgcG9zdF8zLAogIHBvc3RfNCwKICBwb3N0XzUsCiAgcG9zdF82LAogIHBvc3RfNywKICBwb3N0XzgsCiAgcG9zdF85LAogIHBvc3RfMTAsCiAgcG9zdF8xMiwKICBwb3N0XzEzLAogIHBvc3RfMTQsCiAgcG9zdF8xNSwKICBwb3N0XzE2LAogIHBvc3RfMTksCiAgcG9zdF8yMCwKICBwb3N0XzIzLAogIHBvc3RfMjUsCiAgcG9zdF8yNiwKICBwb3N0XzI3LAogIHBvc3RfMjgsCiAgcG9zdF8yOSwKICBwb3N0XzMwLAogIHBvc3RfMzEsCiAgcG9zdF8zMiwKICBwb3N0XzMzLAogIHBvc3RfMzQsCiAgcG9zdF8zNSwKICBwb3N0XzM2LAogIHBvc3RfMzcsCiAgcG9zdF8zOCwKICBwb3N0XzM5LAogIHBvc3RfNDAsCiAgcG9zdF80MSwKICBwb3N0XzQyCl0ubWFwKChwb3N0LCBpbmRleCkgPT4gewogIGNvbnN0IG92ZXJyaWRlID0gYmxvZ092ZXJyaWRlc1twb3N0LnNsdWddOwogIHJldHVybiB7CiAgICBpZDogYHBvc3QtJHtpbmRleCArIDF9YCwKICAgIHRpdGxlOiBwb3N0LnRpdGxlLAogICAgc2x1ZzogcG9zdC5zbHVnLAogICAgY29udGVudDogcG9zdC5jb250ZW50LAogICAgZXhjZXJwdDogcG9zdC5leGNlcnB0LAogICAgZmVhdHVyZWRJbWFnZTogcG9zdC5mZWF0dXJlZEltYWdlLAogICAgY2F0ZWdvcnk6IHBvc3QuY2F0ZWdvcnksCiAgICBhdXRob3I6IHBvc3QuYXV0aG9yLAogICAgc3RhdHVzOiBwb3N0LnN0YXR1cyBhcyAiZHJhZnQiIHwgInB1Ymxpc2hlZCIsCiAgICBtZXRhVGl0bGU6IG92ZXJyaWRlID8gb3ZlcnJpZGUudGl0bGUgOiAocG9zdC5tZXRhVGl0bGUgfHwgcG9zdC50aXRsZSksCiAgICBtZXRhRGVzY3JpcHRpb246IG92ZXJyaWRlID8gb3ZlcnJpZGUuZGVzY3JpcHRpb24gOiAocG9zdC5tZXRhRGVzY3JpcHRpb24gfHwgcG9zdC5leGNlcnB0KSwKICAgIGtleXdvcmRzOiBwb3N0LnRhZ3MgfHwgW10sCiAgICB0YWdzOiBwb3N0LnRhZ3MsCiAgICByZWFkVGltZTogaW5kZXggPT09IDAgPyAxMiA6IGluZGV4ID09PSAxID8gOCA6IGluZGV4ID09PSAyID8gNSA6IDEwLAogICAgcHVibGlzaGVkQXQ6IHBvc3QucHVibGlzaGVkQXQsCiAgICBjcmVhdGVkQXQ6IHBvc3QuY3JlYXRlZEF0LAogICAgdXBkYXRlZEF0OiBwb3N0LnVwZGF0ZWRBdCwKICAgIGZhcXM6IChwb3N0IGFzIGFueSkuZmFxcywKICB9Owp9KTsKCmxldCBpbk1lbW9yeVBvc3RzOiBCbG9nUG9zdFtdID0gWy4uLmJhc2VQb3N0c107CmxldCBpbk1lbW9yeUNhdGVnb3JpZXM6IENhdGVnb3J5W10gPSBbCiAgeyBpZDogImNhdC0xIiwgbmFtZTogIkJhdGhyb29tIFJlbW9kZWxpbmciLCBzbHVnOiAiYmF0aHJvb20tcmVtb2RlbGluZyIsIGRlc2NyaXB0aW9uOiAiQmF0aHJvb20gcmVtb2RlbGluZyBndWlkZXMgYW5kIGFkdmljZS4iIH0sCiAgeyBpZDogImNhdC0yIiwgbmFtZTogIkRlc2lnbiBUcmVuZHMiLCBzbHVnOiAiZGVzaWduLXRyZW5kcyIsIGRlc2NyaXB0aW9uOiAiTGF0ZXN0IGRlc2lnbiB0cmVuZHMgYW5kIGluc3BpcmF0aW9uLiIgfSwKICB7IGlkOiAiY2F0LTMiLCBuYW1lOiAiQ29zdHMgJiBCdWRnZXQiLCBzbHVnOiAiY29zdHMtYnVkZ2V0IiwgZGVzY3JpcHRpb246ICJEZXRhaWxlZCBwcmljaW5nIGd1aWRlcyBmb3IgQ2hhbmRsZXIgYmF0aHJvb20gcmVtb2RlbHMuIiB9LAogIHsgaWQ6ICJjYXQtNCIsIG5hbWU6ICJNYXRlcmlhbHMiLCBzbHVnOiAibWF0ZXJpYWxzIiwgZGVzY3JpcHRpb246ICJFeHBlcnQgYWR2aWNlIG9uIHRpbGUsIGZpeHR1cmVzLCBhbmQgc3VyZmFjZXMuIiB9LAogIHsgaWQ6ICJjYXQtNSIsIG5hbWU6ICJIb21lIFZhbHVlIiwgc2x1ZzogImhvbWUtdmFsdWUiLCBkZXNjcmlwdGlvbjogIlJPSSBhbmFseXNpcyBhbmQgZXF1aXR5LWJ1aWxkaW5nIHRpcHMuIiB9LAogIHsgaWQ6ICJjYXQtNiIsIG5hbWU6ICJUZWNobmljYWwiLCBzbHVnOiAidGVjaG5pY2FsIiwgZGVzY3JpcHRpb246ICJXYXRlcnByb29maW5nIHN5c3RlbXMsIHBlcm1pdHMsIGFuZCBjb25zdHJ1Y3Rpb24gbWV0aG9kcyBmb3IgYmF0aHJvb20gcHJvamVjdHMuIiB9LApdOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFBvc3RzKCk6IFByb21pc2U8QmxvZ1Bvc3RbXT4gewogIHJldHVybiBbLi4uaW5NZW1vcnlQb3N0c10uc29ydCgoYSwgYikgPT4gKGEuY3JlYXRlZEF0IDwgYi5jcmVhdGVkQXQgPyAxIDogLTEpKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFB1Ymxpc2hlZFBvc3RzKCk6IFByb21pc2U8QmxvZ1Bvc3RbXT4gewogIHJldHVybiAoYXdhaXQgZ2V0UG9zdHMoKSkuZmlsdGVyKChwb3N0KSA9PiBwb3N0LnN0YXR1cyA9PT0gInB1Ymxpc2hlZCIpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0UG9zdEJ5U2x1ZyhzbHVnOiBzdHJpbmcpOiBQcm9taXNlPEJsb2dQb3N0IHwgbnVsbD4gewogIHJldHVybiBpbk1lbW9yeVBvc3RzLmZpbmQoKHBvc3QpID0+IHBvc3Quc2x1ZyA9PT0gc2x1ZykgPz8gbnVsbDsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFBvc3RCeUlkKGlkOiBzdHJpbmcpOiBQcm9taXNlPEJsb2dQb3N0IHwgbnVsbD4gewogIHJldHVybiBpbk1lbW9yeVBvc3RzLmZpbmQoKHBvc3QpID0+IHBvc3QuaWQgPT09IGlkKSA/PyBudWxsOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0UmVsYXRlZFBvc3RzKGNhdGVnb3J5OiBzdHJpbmcsIGV4Y2x1ZGVJZDogc3RyaW5nLCBtYXhQb3N0czogbnVtYmVyID0gMyk6IFByb21pc2U8QmxvZ1Bvc3RbXT4gewogIHJldHVybiAoYXdhaXQgZ2V0UHVibGlzaGVkUG9zdHMoKSkKICAgIC5maWx0ZXIoKHBvc3QpID0+IHBvc3QuY2F0ZWdvcnkgPT09IGNhdGVnb3J5ICYmIHBvc3QuaWQgIT09IGV4Y2x1ZGVJZCkKICAgIC5zbGljZSgwLCBtYXhQb3N0cyk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjcmVhdGVQb3N0KAogIGRhdGE6IE9taXQ8QmxvZ1Bvc3QsICJpZCIgfCAiY3JlYXRlZEF0IiB8ICJ1cGRhdGVkQXQiPgopOiBQcm9taXNlPHsgc3VjY2VzczogYm9vbGVhbjsgaWQ/OiBzdHJpbmc7IGVycm9yPzogc3RyaW5nIH0+IHsKICBjb25zdCBzbHVnID0gZGF0YS5zbHVnIHx8IGdlbmVyYXRlU2x1ZyhkYXRhLnRpdGxlKTsKICBjb25zdCBleGlzdGluZyA9IGF3YWl0IGdldFBvc3RCeVNsdWcoc2x1Zyk7CiAgaWYgKGV4aXN0aW5nKSB7CiAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgZXJyb3I6ICJBIHBvc3Qgd2l0aCB0aGlzIHNsdWcgYWxyZWFkeSBleGlzdHMiIH07CiAgfQogIGNvbnN0IGlkID0gYHBvc3QtJHtEYXRlLm5vdygpfWA7CiAgY29uc3Qgbm93ID0gbmV3IERhdGUoKS50b0lTT1N0cmluZygpOwogIGluTWVtb3J5UG9zdHMucHVzaCh7CiAgICAuLi4oZGF0YSBhcyBCbG9nUG9zdCksCiAgICBpZCwKICAgIHNsdWcsCiAgICBjcmVhdGVkQXQ6IG5vdywKICAgIHVwZGF0ZWRBdDogbm93LAogICAgcHVibGlzaGVkQXQ6IGRhdGEuc3RhdHVzID09PSAicHVibGlzaGVkIiA/IG5vdyA6IG51bGwsCiAgfSk7CgogIC8vIEluZGV4Tm93OiBTdWJtaXQgaWYgcHVibGlzaGVkCiAgaWYgKGRhdGEuc3RhdHVzID09PSAicHVibGlzaGVkIikgewogICAgc3VibWl0VG9JbmRleE5vdyhbYC9ibG9nLyR7c2x1Z31gLCAiL2Jsb2ciXSk7CiAgfQoKICByZXR1cm4geyBzdWNjZXNzOiB0cnVlLCBpZCB9Owp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gdXBkYXRlUG9zdCgKICBpZDogc3RyaW5nLAogIGRhdGE6IFBhcnRpYWw8T21pdDxCbG9nUG9zdCwgImlkIiB8ICJjcmVhdGVkQXQiPj4KKTogUHJvbWlzZTx7IHN1Y2Nlc3M6IGJvb2xlYW47IGVycm9yPzogc3RyaW5nIH0+IHsKICBjb25zdCBwb3N0ID0gaW5NZW1vcnlQb3N0cy5maW5kKHAgPT4gcC5pZCA9PT0gaWQpOwogIGlmIChwb3N0ICYmIHBvc3Quc3RhdHVzID09PSAicHVibGlzaGVkIikgewogICAgc3VibWl0VG9JbmRleE5vdyhbYC9ibG9nLyR7cG9zdC5zbHVnfWAsICIvYmxvZyJdKTsKICB9CgogIGluTWVtb3J5UG9zdHMgPSBpbk1lbW9yeVBvc3RzLm1hcCgocG9zdCkgPT4KICAgIHBvc3QuaWQgPT09IGlkID8geyAuLi5wb3N0LCAuLi5kYXRhLCB1cGRhdGVkQXQ6IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKSB9IDogcG9zdAogICk7CiAgcmV0dXJuIHsgc3VjY2VzczogdHJ1ZSB9Owp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZGVsZXRlUG9zdChpZDogc3RyaW5nKTogUHJvbWlzZTx7IHN1Y2Nlc3M6IGJvb2xlYW47IGVycm9yPzogc3RyaW5nIH0+IHsKICBjb25zdCBwb3N0ID0gaW5NZW1vcnlQb3N0cy5maW5kKHAgPT4gcC5pZCA9PT0gaWQpOwogIGlmIChwb3N0ICYmIHBvc3Quc3RhdHVzID09PSAicHVibGlzaGVkIikgewogICAgLy8gTm90ZTogVGVjaG5pY2FsbHkgZm9yIGRlbGV0ZSwgc29tZSBzZWFyY2ggZW5naW5lcyB3YW50IHRoZSBVUkwgc3VibWl0dGVkIHRvIHNpZ25pZnkgaXQncyBnb25lCiAgICBzdWJtaXRUb0luZGV4Tm93KFtgL2Jsb2cvJHtwb3N0LnNsdWd9YCwgIi9ibG9nIl0pOwogIH0KICAKICBpbk1lbW9yeVBvc3RzID0gaW5NZW1vcnlQb3N0cy5maWx0ZXIoKHBvc3QpID0+IHBvc3QuaWQgIT09IGlkKTsKICByZXR1cm4geyBzdWNjZXNzOiB0cnVlIH07Cn0KCmV4cG9ydCBjb25zdCBnZXRBbGxQb3N0cyA9IGdldFBvc3RzOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHVwZGF0ZVBvc3RTdGF0dXMoCiAgaWQ6IHN0cmluZywKICBzdGF0dXM6ICJkcmFmdCIgfCAicHVibGlzaGVkIgopOiBQcm9taXNlPHsgc3VjY2VzczogYm9vbGVhbjsgZXJyb3I/OiBzdHJpbmcgfT4gewogIGNvbnN0IHBvc3QgPSBpbk1lbW9yeVBvc3RzLmZpbmQocCA9PiBwLmlkID09PSBpZCk7CiAgCiAgaW5NZW1vcnlQb3N0cyA9IGluTWVtb3J5UG9zdHMubWFwKChwb3N0KSA9PgogICAgcG9zdC5pZCA9PT0gaWQKICAgICAgPyB7CiAgICAgICAgICAuLi5wb3N0LAogICAgICAgICAgc3RhdHVzLAogICAgICAgICAgdXBkYXRlZEF0OiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCksCiAgICAgICAgICBwdWJsaXNoZWRBdDogc3RhdHVzID09PSAicHVibGlzaGVkIiA/IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKSA6IG51bGwsCiAgICAgICAgfQogICAgICA6IHBvc3QKICApOwoKICAvLyBJbmRleE5vdzogU3VibWl0IGlmIG5ld2x5IHB1Ymxpc2hlZCBvciB1cGRhdGVkIHdoaWxlIHB1Ymxpc2hlZAogIGlmIChzdGF0dXMgPT09ICJwdWJsaXNoZWQiICYmIHBvc3QpIHsKICAgIHN1Ym1pdFRvSW5kZXhOb3coW2AvYmxvZy8ke3Bvc3Quc2x1Z31gLCAiL2Jsb2ciXSk7CiAgfQoKICByZXR1cm4geyBzdWNjZXNzOiB0cnVlIH07Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRQb3N0c0NvdW50KCk6IFByb21pc2U8bnVtYmVyPiB7CiAgcmV0dXJuIGluTWVtb3J5UG9zdHMubGVuZ3RoOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0UmVjZW50UG9zdHMobWF4UG9zdHM6IG51bWJlciA9IDUpOiBQcm9taXNlPEJsb2dQb3N0W10+IHsKICByZXR1cm4gKGF3YWl0IGdldFBvc3RzKCkpLnNsaWNlKDAsIG1heFBvc3RzKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldENhdGVnb3JpZXMoKTogUHJvbWlzZTxDYXRlZ29yeVtdPiB7CiAgcmV0dXJuIFsuLi5pbk1lbW9yeUNhdGVnb3JpZXNdOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY3JlYXRlQ2F0ZWdvcnkoCiAgZGF0YTogT21pdDxDYXRlZ29yeSwgImlkIj4KKTogUHJvbWlzZTx7IHN1Y2Nlc3M6IGJvb2xlYW47IGlkPzogc3RyaW5nOyBlcnJvcj86IHN0cmluZyB9PiB7CiAgY29uc3QgaWQgPSBgY2F0LSR7RGF0ZS5ub3coKX1gOwogIGluTWVtb3J5Q2F0ZWdvcmllcy5wdXNoKHsgaWQsIC4uLmRhdGEgfSk7CiAgcmV0dXJuIHsgc3VjY2VzczogdHJ1ZSwgaWQgfTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHVwZGF0ZUNhdGVnb3J5KAogIGlkOiBzdHJpbmcsCiAgZGF0YTogUGFydGlhbDxPbWl0PENhdGVnb3J5LCAiaWQiPj4KKTogUHJvbWlzZTx7IHN1Y2Nlc3M6IGJvb2xlYW47IGVycm9yPzogc3RyaW5nIH0+IHsKICBpbk1lbW9yeUNhdGVnb3JpZXMgPSBpbk1lbW9yeUNhdGVnb3JpZXMubWFwKChjYXRlZ29yeSkgPT4KICAgIGNhdGVnb3J5LmlkID09PSBpZCA/IHsgLi4uY2F0ZWdvcnksIC4uLmRhdGEgfSA6IGNhdGVnb3J5CiAgKTsKICByZXR1cm4geyBzdWNjZXNzOiB0cnVlIH07Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVDYXRlZ29yeShpZDogc3RyaW5nKTogUHJvbWlzZTx7IHN1Y2Nlc3M6IGJvb2xlYW47IGVycm9yPzogc3RyaW5nIH0+IHsKICBpbk1lbW9yeUNhdGVnb3JpZXMgPSBpbk1lbW9yeUNhdGVnb3JpZXMuZmlsdGVyKChjYXRlZ29yeSkgPT4gY2F0ZWdvcnkuaWQgIT09IGlkKTsKICByZXR1cm4geyBzdWNjZXNzOiB0cnVlIH07Cn0K
+import type { BlogPost, Category } from "@/lib/types";
+import { 
+  post_1,
+  post_2,
+  post_3,
+  post_4,
+  post_5,
+  post_6,
+  post_7,
+  post_8,
+  post_9,
+  post_10,
+  post_12,
+  post_13,
+  post_14,
+  post_15,
+  post_16,
+  post_19,
+  post_20,
+  post_23,
+  post_25,
+  post_26,
+  post_27,
+  post_28,
+  post_29,
+  post_30,
+  post_31,
+  post_32,
+  post_33,
+  post_34,
+  post_35,
+  post_36,
+  post_37,
+  post_38,
+  post_39,
+  post_40,
+  post_41,
+  post_42
+} from "@/lib/seed-blog";
+import { submitToIndexNow } from "@/lib/indexnow";
+
+function generateSlug(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+}
+
+let blogOverrides: Record<string, { title: string; description: string }> = {};
+try {
+  blogOverrides = require("../blog-metadata-overrides.json");
+} catch (e) {
+  // Safe fallback
+}
+
+const basePosts: BlogPost[] = [
+  post_1,
+  post_2,
+  post_3,
+  post_4,
+  post_5,
+  post_6,
+  post_7,
+  post_8,
+  post_9,
+  post_10,
+  post_12,
+  post_13,
+  post_14,
+  post_15,
+  post_16,
+  post_19,
+  post_20,
+  post_23,
+  post_25,
+  post_26,
+  post_27,
+  post_28,
+  post_29,
+  post_30,
+  post_31,
+  post_32,
+  post_33,
+  post_34,
+  post_35,
+  post_36,
+  post_37,
+  post_38,
+  post_39,
+  post_40,
+  post_41,
+  post_42
+].map((post, index) => {
+  const override = blogOverrides[post.slug];
+  return {
+    id: `post-${index + 1}`,
+    title: post.title,
+    slug: post.slug,
+    content: post.content,
+    excerpt: post.excerpt,
+    featuredImage: post.featuredImage,
+    category: post.category,
+    author: post.author,
+    status: post.status as "draft" | "published",
+    metaTitle: override ? override.title : (post.metaTitle || post.title),
+    metaDescription: override ? override.description : (post.metaDescription || post.excerpt),
+    keywords: post.tags || [],
+    tags: post.tags,
+    readTime: index === 0 ? 12 : index === 1 ? 8 : index === 2 ? 5 : 10,
+    publishedAt: post.publishedAt,
+    createdAt: post.createdAt,
+    updatedAt: post.updatedAt,
+    faqs: (post as any).faqs,
+  };
+});
+
+let inMemoryPosts: BlogPost[] = [...basePosts];
+let inMemoryCategories: Category[] = [
+  { id: "cat-1", name: "Bathroom Remodeling", slug: "bathroom-remodeling", description: "Bathroom remodeling guides and advice." },
+  { id: "cat-2", name: "Design Trends", slug: "design-trends", description: "Latest design trends and inspiration." },
+  { id: "cat-3", name: "Costs & Budget", slug: "costs-budget", description: "Detailed pricing guides for Chandler bathroom remodels." },
+  { id: "cat-4", name: "Materials", slug: "materials", description: "Expert advice on tile, fixtures, and surfaces." },
+  { id: "cat-5", name: "Home Value", slug: "home-value", description: "ROI analysis and equity-building tips." },
+  { id: "cat-6", name: "Technical", slug: "technical", description: "Waterproofing systems, permits, and construction methods for bathroom projects." },
+];
+
+export async function getPosts(): Promise<BlogPost[]> {
+  return [...inMemoryPosts].sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
+}
+
+export async function getPublishedPosts(): Promise<BlogPost[]> {
+  return (await getPosts()).filter((post) => post.status === "published");
+}
+
+export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
+  return inMemoryPosts.find((post) => post.slug === slug) ?? null;
+}
+
+export async function getPostById(id: string): Promise<BlogPost | null> {
+  return inMemoryPosts.find((post) => post.id === id) ?? null;
+}
+
+export async function getRelatedPosts(category: string, excludeId: string, maxPosts: number = 3): Promise<BlogPost[]> {
+  return (await getPublishedPosts())
+    .filter((post) => post.category === category && post.id !== excludeId)
+    .slice(0, maxPosts);
+}
+
+export async function createPost(
+  data: Omit<BlogPost, "id" | "createdAt" | "updatedAt">
+): Promise<{ success: boolean; id?: string; error?: string }> {
+  const slug = data.slug || generateSlug(data.title);
+  const existing = await getPostBySlug(slug);
+  if (existing) {
+    return { success: false, error: "A post with this slug already exists" };
+  }
+  const id = `post-${Date.now()}`;
+  const now = new Date().toISOString();
+  inMemoryPosts.push({
+    ...(data as BlogPost),
+    id,
+    slug,
+    createdAt: now,
+    updatedAt: now,
+    publishedAt: data.status === "published" ? now : null,
+  });
+
+  // IndexNow: Submit if published
+  if (data.status === "published") {
+    submitToIndexNow([`/blog/${slug}`, "/blog"]);
+  }
+
+  return { success: true, id };
+}
+
+export async function updatePost(
+  id: string,
+  data: Partial<Omit<BlogPost, "id" | "createdAt">>
+): Promise<{ success: boolean; error?: string }> {
+  const post = inMemoryPosts.find(p => p.id === id);
+  if (post && post.status === "published") {
+    submitToIndexNow([`/blog/${post.slug}`, "/blog"]);
+  }
+
+  inMemoryPosts = inMemoryPosts.map((post) =>
+    post.id === id ? { ...post, ...data, updatedAt: new Date().toISOString() } : post
+  );
+  return { success: true };
+}
+
+export async function deletePost(id: string): Promise<{ success: boolean; error?: string }> {
+  const post = inMemoryPosts.find(p => p.id === id);
+  if (post && post.status === "published") {
+    // Note: Technically for delete, some search engines want the URL submitted to signify it's gone
+    submitToIndexNow([`/blog/${post.slug}`, "/blog"]);
+  }
+
+  inMemoryPosts = inMemoryPosts.filter((post) => post.id !== id);
+  return { success: true };
+}
+
+export const getAllPosts = getPosts;
+
+export async function updatePostStatus(
+  id: string,
+  status: "draft" | "published"
+): Promise<{ success: boolean; error?: string }> {
+  const post = inMemoryPosts.find(p => p.id === id);
+
+  inMemoryPosts = inMemoryPosts.map((post) =>
+    post.id === id
+      ? {
+          ...post,
+          status,
+          updatedAt: new Date().toISOString(),
+          publishedAt: status === "published" ? new Date().toISOString() : null,
+        }
+      : post
+  );
+
+  // IndexNow: Submit if newly published or updated while published
+  if (status === "published" && post) {
+    submitToIndexNow([`/blog/${post.slug}`, "/blog"]);
+  }
+
+  return { success: true };
+}
+
+export async function getPostsCount(): Promise<number> {
+  return inMemoryPosts.length;
+}
+
+export async function getRecentPosts(maxPosts: number = 5): Promise<BlogPost[]> {
+  return (await getPosts()).slice(0, maxPosts);
+}
+
+export async function getCategories(): Promise<Category[]> {
+  return [...inMemoryCategories];
+}
+
+export async function createCategory(
+  data: Omit<Category, "id">
+): Promise<{ success: boolean; id?: string; error?: string }> {
+  const id = `cat-${Date.now()}`;
+  inMemoryCategories.push({ id, ...data });
+  return { success: true, id };
+}
+
+export async function updateCategory(
+  id: string,
+  data: Partial<Omit<Category, "id">>
+): Promise<{ success: boolean; error?: string }> {
+  inMemoryCategories = inMemoryCategories.map((category) =>
+    category.id === id ? { ...category, ...data } : category
+  );
+  return { success: true };
+}
+
+export async function deleteCategory(id: string): Promise<{ success: boolean; error?: string }> {
+  inMemoryCategories = inMemoryCategories.filter((category) => category.id !== id);
+  return { success: true };
+}
