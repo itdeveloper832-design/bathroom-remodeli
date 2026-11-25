@@ -1,1 +1,360 @@
-ewogICJ2ZXJzaW9uIjogMiwKICAibmFtZSI6ICJiYXRocm9vbS1yZW1vZGVsaW5nLXdlYnNpdGUiLAogICJpbnN0YWxsQ29tbWFuZCI6ICJwbnBtIGluc3RhbGwgLS1uby1mcm96ZW4tbG9ja2ZpbGUiLAogICJoZWFkZXJzIjogWwogICAgewogICAgICAic291cmNlIjogIi9pbWFnZXMvKC4qKSIsCiAgICAgICJoZWFkZXJzIjogWwogICAgICAgIHsKICAgICAgICAgICJrZXkiOiAiQ2FjaGUtQ29udHJvbCIsCiAgICAgICAgICAidmFsdWUiOiAicHVibGljLCBtYXgtYWdlPTMxNTM2MDAwLCBpbW11dGFibGUiCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9fbmV4dC9zdGF0aWMvKC4qKSIsCiAgICAgICJoZWFkZXJzIjogWwogICAgICAgIHsKICAgICAgICAgICJrZXkiOiAiQ2FjaGUtQ29udHJvbCIsCiAgICAgICAgICAidmFsdWUiOiAicHVibGljLCBtYXgtYWdlPTMxNTM2MDAwLCBpbW11dGFibGUiCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9mb250cy8oLiopIiwKICAgICAgImhlYWRlcnMiOiBbCiAgICAgICAgewogICAgICAgICAgImtleSI6ICJDYWNoZS1Db250cm9sIiwKICAgICAgICAgICJ2YWx1ZSI6ICJwdWJsaWMsIG1heC1hZ2U9MzE1MzYwMDAsIGltbXV0YWJsZSIKICAgICAgICB9CiAgICAgIF0KICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiLyguKikud2VicCIsCiAgICAgICJoZWFkZXJzIjogWwogICAgICAgIHsKICAgICAgICAgICJrZXkiOiAiQ2FjaGUtQ29udHJvbCIsCiAgICAgICAgICAidmFsdWUiOiAicHVibGljLCBtYXgtYWdlPTMxNTM2MDAwLCBpbW11dGFibGUiCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi8oLiopLmF2aWYiLAogICAgICAiaGVhZGVycyI6IFsKICAgICAgICB7CiAgICAgICAgICAia2V5IjogIkNhY2hlLUNvbnRyb2wiLAogICAgICAgICAgInZhbHVlIjogInB1YmxpYywgbWF4LWFnZT0zMTUzNjAwMCwgaW1tdXRhYmxlIgogICAgICAgIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvKC4qKS53b2ZmMiIsCiAgICAgICJoZWFkZXJzIjogWwogICAgICAgIHsKICAgICAgICAgICJrZXkiOiAiQ2FjaGUtQ29udHJvbCIsCiAgICAgICAgICAidmFsdWUiOiAicHVibGljLCBtYXgtYWdlPTMxNTM2MDAwLCBpbW11dGFibGUiCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi8oLiopIiwKICAgICAgImhlYWRlcnMiOiBbCiAgICAgICAgewogICAgICAgICAgImtleSI6ICJYLUNvbnRlbnQtVHlwZS1PcHRpb25zIiwKICAgICAgICAgICJ2YWx1ZSI6ICJub3NuaWZmIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImtleSI6ICJYLUZyYW1lLU9wdGlvbnMiLAogICAgICAgICAgInZhbHVlIjogIkRFTlkiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAia2V5IjogIlgtWFNTLVByb3RlY3Rpb24iLAogICAgICAgICAgInZhbHVlIjogIjE7IG1vZGU9YmxvY2siCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAia2V5IjogIlJlZmVycmVyLVBvbGljeSIsCiAgICAgICAgICAidmFsdWUiOiAic3RyaWN0LW9yaWdpbi13aGVuLWNyb3NzLW9yaWdpbiIKICAgICAgICB9CiAgICAgIF0KICAgIH0KICBdLAogICJjcm9ucyI6IFtdLAogICJyZWRpcmVjdHMiOiBbCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL3JlbW9kZWxpbmctZ2lsYmVydC1hei8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctZ2lsYmVydC1hei8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvcmVtb2RlbGluZy1tZXNhLWF6LyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1tZXNhLWF6LyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9yZW1vZGVsaW5nLXRlbXBlLWF6LyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy10ZW1wZS1hei8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvYmxvZy93aHktd2UtdXNlLXNjaGx1dGVyLWtlcmRpLXdhdGVycHJvb2ZpbmctY2hhbmRsZXIvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9ibG9nL3NjaGx1dGVyLWtlcmRpLXZzLXJlZGdhcmQtYXJpem9uYS8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1maW5hbmNpbmcvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9maW5hbmNpbmcvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2Jsb2cvd2Fsay1pbi1zaG93ZXItY29zdC1jaGFuZGxlci1hei0yMDI2LXByaWNlLWd1aWRlLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmxvZy93YWxrLWluLXNob3dlci1jb3N0LWNoYW5kbGVyLWF6LyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9ibG9nL2NoYW5kbGVyLWhhcmQtd2F0ZXItYmF0aHJvb20tdGlsZS1ncm91dC1zb2x1dGlvbnMvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9ibG9nL2NoYW5kbGVyLWF6LWhhcmQtd2F0ZXItYmF0aHJvb20tdGlsZS8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvYmxvZy9zbWFsbC1iYXRocm9vbS1yZW1vZGVsLWlkZWFzLWNoYW5kbGVyLWF6LyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmxvZy9zbWFsbC1iYXRocm9vbS1sYXlvdXQtaWRlYXMtY2hhbmRsZXIvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2Jsb2cvYWR1LWNhc2l0YS1jb25zdHJ1Y3Rpb24tZ3VpZGUtYXJpem9uYS8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2Jsb2cvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2Jsb2cvZ2FyYWdlLWNvbnZlcnNpb25zLWNoYW5kbGVyLWF6LWd1aWRlLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmxvZy8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvYmxvZy9iYXRocm9vbS1yZW1vZGVsLWNvc3QtY2hhbmRsZXItYXotMjAyNS8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2Jsb2cvYmF0aHJvb20tcmVtb2RlbC1jb3N0LWNoYW5kbGVyLWF6LTIwMjYvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2Jsb2cvMjAyNC1iYXRocm9vbS1kZXNpZ24tdHJlbmRzLWNoYW5kbGVyLWFyaXpvbmEvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9ibG9nLzIwMjYtYmF0aHJvb20tZGVzaWduLXRyZW5kcy1jaGFuZGxlci1hcml6b25hLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWFyZWFzL29jb3RpbGxvLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1vY290aWxsby8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1hcmVhcy9zdW4tbGFrZXMvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLXN1bi1sYWtlcy8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1hcmVhcy9kb3dudG93bi1jaGFuZGxlci8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctZG93bnRvd24tY2hhbmRsZXIvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctYXJlYXMvZnVsdG9uLXJhbmNoLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1mdWx0b24tcmFuY2gvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctYXJlYXMvY29vcGVyLWNvbW1vbnMvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWNvb3Blci1jb21tb25zLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWFyZWFzL2ZveC1jcm9zc2luZy8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctY29vcGVyLWNvbW1vbnMvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctYXJlYXMvY2hhbmRsZXItaGVpZ2h0cy8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctY2hhbmRsZXItaGVpZ2h0cy8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1hcmVhcy9hbmRlcnNlbi1zcHJpbmdzLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1hbmRlcnNlbi1zcHJpbmdzLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWFyZWFzL2xheXRvbi1sYWtlcy8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctbGF5dG9uLWxha2VzLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWFyZWFzL3RoZS1pc2xhbmRzLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy10aGUtaXNsYW5kcy8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1hcmVhcy9wZWNvcy1yYW5jaC8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctcGVjb3MtcmFuY2gvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LW9jb3RpbGxvLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1vY290aWxsby8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvY2hhbmRsZXItYXotZnVsdG9uLXJhbmNoLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1mdWx0b24tcmFuY2gvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWNoYW5kbGVyLWhlaWdodHMvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWNoYW5kbGVyLWhlaWdodHMvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWxheXRvbi1sYWtlcy8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctbGF5dG9uLWxha2VzLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9jaGFuZGxlci1hei1hbmRlcnNlbi1zcHJpbmdzLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1hbmRlcnNlbi1zcHJpbmdzLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9jaGFuZGxlci1hei1wZWNvcy1yYW5jaC8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctcGVjb3MtcmFuY2gvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWRvd250b3duLWNoYW5kbGVyLyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1kb3dudG93bi1jaGFuZGxlci8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvY2hhbmRsZXItYXotdGhlLWlzbGFuZHMvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLXRoZS1pc2xhbmRzLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9jaGFuZGxlci1hei1vY290aWxsby04NTI0OC8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctb2NvdGlsbG8vIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWZ1bHRvbi1yYW5jaC04NTI0OC8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctZnVsdG9uLXJhbmNoLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9jaGFuZGxlci1hei1hcmRlbi1wYXJrLTg1MjQ4LyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvY2hhbmRsZXItYXotYXJkZW4tcGFyay8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvY2hhbmRsZXItYXotY2lyY2xlLWctODUyNDkvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9jaGFuZGxlci1hei1jaXJjbGUtZy8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvY2hhbmRsZXItYXotcmlnZ3MtcmFuY2gtODUyNDkvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9jaGFuZGxlci1hei1yaWdncy1yYW5jaC8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvY2hhbmRsZXItYXotc3VuLWdyb3Zlcy04NTI0OS8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2NoYW5kbGVyLWF6LXN1bi1ncm92ZXMvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWNoYW5kbGVyLWhlaWdodHMtODUyNDkvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWNoYW5kbGVyLWhlaWdodHMvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWxheXRvbi1sYWtlcy04NTI0OS8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctbGF5dG9uLWxha2VzLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9jaGFuZGxlci1hei13YXJuZXItcmFuY2gtODUyMjQvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9jaGFuZGxlci1hei13YXJuZXItcmFuY2gvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWRvYnNvbi1wbGFjZS04NTIyNC8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2NoYW5kbGVyLWF6LWRvYnNvbi1wbGFjZS8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvY2hhbmRsZXItYXotY29wcGVyLXJpZGdlLWNvbmRvbWluaXVtcy04NTIyNC8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2NoYW5kbGVyLWF6LWNvcHBlci1yaWRnZS1jb25kb21pbml1bXMvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWFuZGVyc2VuLXNwcmluZ3MtODUyMjQvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWFuZGVyc2VuLXNwcmluZ3MvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LXBlY29zLXJhbmNoLTg1MjI0LyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvYmF0aHJvb20tcmVtb2RlbGluZy1wZWNvcy1yYW5jaC8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvY2hhbmRsZXItYXotZG93bnRvd24tY2hhbmRsZXItODUyMjUvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWRvd250b3duLWNoYW5kbGVyLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9jaGFuZGxlci1hei1jbGVtZW50ZS1yYW5jaC04NTIyNS8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2NoYW5kbGVyLWF6LWNsZW1lbnRlLXJhbmNoLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9jaGFuZGxlci1hei10aGUtaXNsYW5kcy04NTIyNS8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2JhdGhyb29tLXJlbW9kZWxpbmctdGhlLWlzbGFuZHMvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2NoYW5kbGVyLWF6LWt5cmVuZS1jb3JyaWRvci04NTIyNi8iLAogICAgICAiZGVzdGluYXRpb24iOiAiL2NoYW5kbGVyLWF6LWt5cmVuZS1jb3JyaWRvci8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvY2hhbmRsZXItYXotc3RlbGxhci1haXJwYXJrLTg1MjI2LyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvY2hhbmRsZXItYXotc3RlbGxhci1haXJwYXJrLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi93YWxrLWluLXNob3dlcnMvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9zaG93ZXItcmVtb2RlbGluZy8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvc2hvd2VyLXJlcGxhY2VtZW50LyIsCiAgICAgICJkZXN0aW5hdGlvbiI6ICIvc2hvd2VyLXJlbW9kZWxpbmcvIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL3Nob3dlci1iYXRodHViLXVwZ3JhZGUvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9zaG93ZXItcmVtb2RlbGluZy8iLAogICAgICAicGVybWFuZW50IjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInNvdXJjZSI6ICIvdHViLXJlbW92YWwvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi90dWItdG8tc2hvd2VyLWNvbnZlcnNpb24vIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJzb3VyY2UiOiAiL2hhbmRpY2FwLWFjY2Vzc2libGUtYmF0aHJvb20tY2hhbmRsZXIvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9oYW5kaWNhcC1hY2Nlc3NpYmxlLWJhdGhyb29tLyIsCiAgICAgICJwZXJtYW5lbnQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAic291cmNlIjogIi9iYXRocm9vbS1yZW1vZGVsLWNvc3QtY2hhbmRsZXIvIiwKICAgICAgImRlc3RpbmF0aW9uIjogIi9iYXRocm9vbS1yZW1vZGVsaW5nLWNvc3QtY2hhbmRsZXItYXovIiwKICAgICAgInBlcm1hbmVudCI6IHRydWUKICAgIH0KICBdCn0K
+{
+  "version": 2,
+  "name": "bathroom-remodeling-website",
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/_next/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).webp",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).avif",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).woff2",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "crons": [],
+  "redirects": [
+    {
+      "source": "/remodeling-gilbert-az/",
+      "destination": "/bathroom-remodeling-gilbert-az/",
+      "permanent": true
+    },
+    {
+      "source": "/remodeling-mesa-az/",
+      "destination": "/bathroom-remodeling-mesa-az/",
+      "permanent": true
+    },
+    {
+      "source": "/remodeling-tempe-az/",
+      "destination": "/bathroom-remodeling-tempe-az/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-we-use-schluter-kerdi-waterproofing-chandler/",
+      "destination": "/blog/schluter-kerdi-vs-redgard-arizona/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-financing/",
+      "destination": "/financing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/walk-in-shower-cost-chandler-az-2026-price-guide/",
+      "destination": "/blog/walk-in-shower-cost-chandler-az/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chandler-hard-water-bathroom-tile-grout-solutions/",
+      "destination": "/blog/chandler-az-hard-water-bathroom-tile/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/small-bathroom-remodel-ideas-chandler-az/",
+      "destination": "/blog/small-bathroom-layout-ideas-chandler/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/adu-casita-construction-guide-arizona/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/garage-conversions-chandler-az-guide/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bathroom-remodel-cost-chandler-az-2025/",
+      "destination": "/blog/bathroom-remodel-cost-chandler-az-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/2024-bathroom-design-trends-chandler-arizona/",
+      "destination": "/blog/2026-bathroom-design-trends-chandler-arizona/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/ocotillo/",
+      "destination": "/bathroom-remodeling-ocotillo/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/sun-lakes/",
+      "destination": "/bathroom-remodeling-sun-lakes/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/downtown-chandler/",
+      "destination": "/bathroom-remodeling-downtown-chandler/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/fulton-ranch/",
+      "destination": "/bathroom-remodeling-fulton-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/cooper-commons/",
+      "destination": "/bathroom-remodeling-cooper-commons/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/fox-crossing/",
+      "destination": "/bathroom-remodeling-cooper-commons/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/chandler-heights/",
+      "destination": "/bathroom-remodeling-chandler-heights/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/andersen-springs/",
+      "destination": "/bathroom-remodeling-andersen-springs/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/layton-lakes/",
+      "destination": "/bathroom-remodeling-layton-lakes/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/the-islands/",
+      "destination": "/bathroom-remodeling-the-islands/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-areas/pecos-ranch/",
+      "destination": "/bathroom-remodeling-pecos-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-ocotillo/",
+      "destination": "/bathroom-remodeling-ocotillo/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-fulton-ranch/",
+      "destination": "/bathroom-remodeling-fulton-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-chandler-heights/",
+      "destination": "/bathroom-remodeling-chandler-heights/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-layton-lakes/",
+      "destination": "/bathroom-remodeling-layton-lakes/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-andersen-springs/",
+      "destination": "/bathroom-remodeling-andersen-springs/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-pecos-ranch/",
+      "destination": "/bathroom-remodeling-pecos-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-downtown-chandler/",
+      "destination": "/bathroom-remodeling-downtown-chandler/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-the-islands/",
+      "destination": "/bathroom-remodeling-the-islands/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-ocotillo-85248/",
+      "destination": "/bathroom-remodeling-ocotillo/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-fulton-ranch-85248/",
+      "destination": "/bathroom-remodeling-fulton-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-arden-park-85248/",
+      "destination": "/chandler-az-arden-park/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-circle-g-85249/",
+      "destination": "/chandler-az-circle-g/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-riggs-ranch-85249/",
+      "destination": "/chandler-az-riggs-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-sun-groves-85249/",
+      "destination": "/chandler-az-sun-groves/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-chandler-heights-85249/",
+      "destination": "/bathroom-remodeling-chandler-heights/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-layton-lakes-85249/",
+      "destination": "/bathroom-remodeling-layton-lakes/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-warner-ranch-85224/",
+      "destination": "/chandler-az-warner-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-dobson-place-85224/",
+      "destination": "/chandler-az-dobson-place/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-copper-ridge-condominiums-85224/",
+      "destination": "/chandler-az-copper-ridge-condominiums/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-andersen-springs-85224/",
+      "destination": "/bathroom-remodeling-andersen-springs/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-pecos-ranch-85224/",
+      "destination": "/bathroom-remodeling-pecos-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-downtown-chandler-85225/",
+      "destination": "/bathroom-remodeling-downtown-chandler/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-clemente-ranch-85225/",
+      "destination": "/chandler-az-clemente-ranch/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-the-islands-85225/",
+      "destination": "/bathroom-remodeling-the-islands/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-kyrene-corridor-85226/",
+      "destination": "/chandler-az-kyrene-corridor/",
+      "permanent": true
+    },
+    {
+      "source": "/chandler-az-stellar-airpark-85226/",
+      "destination": "/chandler-az-stellar-airpark/",
+      "permanent": true
+    },
+    {
+      "source": "/walk-in-showers/",
+      "destination": "/shower-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/shower-replacement/",
+      "destination": "/shower-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/shower-bathtub-upgrade/",
+      "destination": "/shower-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/tub-removal/",
+      "destination": "/tub-to-shower-conversion/",
+      "permanent": true
+    },
+    {
+      "source": "/handicap-accessible-bathroom-chandler/",
+      "destination": "/handicap-accessible-bathroom/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodel-cost-chandler/",
+      "destination": "/bathroom-remodeling-cost-chandler-az/",
+      "permanent": true
+    }
+  ]
+}
